@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" id="mainHtml">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="details-page">
 
     <!-- الهيدر الموحد -->
@@ -20,17 +22,25 @@
                     <span>لخدمات المباني</span>
                 </div>
             </div>
-            <nav id="nav-menu">
+              <nav id="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#home">الرئيسية</a></li>
+                    <li><a href="index.html#about">من نحن</a></li>
                     <li><a href="index.html#marble">جلي الرخام</a></li>
                     <li><a href="index.html#cleaning">التنظيف</a></li>
-                    <li><a href="index.html#decor" class="active">الديكور</a></li>
+                    <li><a href="index.html#decor">الديكور</a></li>
                     <li><a href="index.html#maintenance">الصيانة</a></li>
+                    <li class="mobile-lang-item">
+                        <button id="langSwitcher" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            English
+                        </button>
+                    </li>
                 </ul>
             </nav>
-            <div class="header-actions">
-                <button id="langSwitcher" class="lang-btn"><i class="fas fa-globe"></i> English</button>
+
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
@@ -46,11 +56,12 @@
     <!-- المحتوى الرئيسي بتنسيق احترافي -->
     <main class="container section-padding">
         <div class="article-layout-grid">
-            
+
             <!-- الجانب الأيمن: المقال والخدمات -->
             <div class="article-main-side reveal">
                 <h2 class="gold-text mb-3">ما هو الجبس بورد ولماذا أصبح أساسياً؟</h2>
-                <p class="article-intro-text">يعتبر الجبس بورد مادة بناء عصرية تميزت بمرونتها وسهولة استخدامها. يتكون من ألواح جبسية مضغوطة توفر حلولاً مثالية للأسقف والجدران، مع ميزات العزل الصوتي والحراري الفائقة.</p>
+                <p class="article-intro-text">يعتبر الجبس بورد مادة بناء عصرية تميزت بمرونتها وسهولة استخدامها. يتكون من
+                    ألواح جبسية مضغوطة توفر حلولاً مثالية للأسقف والجدران، مع ميزات العزل الصوتي والحراري الفائقة.</p>
 
                 <!-- شبكة المميزات الثلاثية -->
                 <div class="importance-mini-grid">
@@ -75,27 +86,39 @@
                 <div class="numbered-services-list">
                     <div class="n-service-item">
                         <div class="n-number">01</div>
-                        <div class="n-text"><h4>تصميم وتنفيذ الأسقف المعلقة متعددة المستويات.</h4></div>
+                        <div class="n-text">
+                            <h4>تصميم وتنفيذ الأسقف المعلقة متعددة المستويات.</h4>
+                        </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">02</div>
-                        <div class="n-text"><h4>تقسيم المساحات الداخلية بجدران الجبس بورد الأنيقة.</h4></div>
+                        <div class="n-text">
+                            <h4>تقسيم المساحات الداخلية بجدران الجبس بورد الأنيقة.</h4>
+                        </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">03</div>
-                        <div class="n-text"><h4>تنفيذ ديكورات الصالونات النسائية والمراكز التجارية.</h4></div>
+                        <div class="n-text">
+                            <h4>تنفيذ ديكورات الصالونات النسائية والمراكز التجارية.</h4>
+                        </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">04</div>
-                        <div class="n-text"><h4>تركيب بديل الخشب وبديل الرخام والخشب الشيبورد.</h4></div>
+                        <div class="n-text">
+                            <h4>تركيب بديل الخشب وبديل الرخام والخشب الشيبورد.</h4>
+                        </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">05</div>
-                        <div class="n-text"><h4>تركيب أنظمة الإضاءة الحديثة (بروفايل ليد، ماجنتك لايت).</h4></div>
+                        <div class="n-text">
+                            <h4>تركيب أنظمة الإضاءة الحديثة (بروفايل ليد، ماجنتك لايت).</h4>
+                        </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">06</div>
-                        <div class="n-text"><h4>أعمال الجبس المغربي والزخارف الجبسية التقليدية.</h4></div>
+                        <div class="n-text">
+                            <h4>أعمال الجبس المغربي والزخارف الجبسية التقليدية.</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,17 +127,18 @@
             <aside class="article-sidebar-side">
                 <div class="sticky-contact-card reveal">
                     <div class="inner-cta">
-                        <i class="fas fa-drafting-pencil main-cta-icon"></i>
-                        <h3>صمم منزلك معنا</h3>
-                        <p>نقدم حلولاً إبداعية تناسب جميع الأذواق والميزانيات برؤية مهندسين مختصين.</p>
-                        <a href="https://wa.me/971566049805" class="btn-cta-sidebar"><i class="fab fa-whatsapp"></i> تحدث مع المصمم</a>
+                        <i class="fas fa-headset main-cta-icon"></i>
+                        <h3>تواصل معنا الآن</h3>
+                        <p>نحن متواجدون في أبو ظبي لخدمتكم على مدار الساعة.</p>
+                        <a href="https://wa.me/971566049805" class="btn-cta-sidebar"><i class="fab fa-whatsapp"></i>
+                            اطلب الخدمة</a>
                         <div class="sidebar-info-row">
-                            <span><i class="fas fa-phone-alt"></i> 0566049805</span>
+                            <span><i class="fas fa-phone-alt"></i> 0566049805</span><br>
+                            <span><i class="fas fa-map-marker-alt"></i> أبو ظبي</span>
                         </div>
                     </div>
                 </div>
             </aside>
-
         </div>
     </main>
 
@@ -127,4 +151,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

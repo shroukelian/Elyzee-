@@ -247,6 +247,57 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 26, 53, 0.98) !important;
+        backdrop-filter: blur(10px);
+        display: flex !important;
+        flex-direction: column !important;
+        
+        /* التعديل هنا لتقليل الفراغات */
+        justify-content: center !important; /* يوسط الكتلة كاملة في نص الشاشة */
+        align-items: center !important;
+        gap: 10px !important; /* المسافة بين كل رابط والثاني */
+        
+        transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        z-index: 2500;
+    }
+
+    .nav-links li {
+        margin: 5px 0 !important; /* تقليل المارجن */
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        font-size: 20px !important; /* تصغير الخط قليلاً ليبدو أرشق */
+        padding: 10px 0 !important;
+        display: block;
+        color: #fff !important;
+        font-weight: 600;
+    }
+
+    /* ضبط زر اللغة ليكون قريباً من القائمة وليس بعيداً في الأسفل */
+    .mobile-lang-item {
+        margin-top: 20px !important;
+    }
+
+    .lang-btn-nav {
+        min-width: 140px !important;
+        height: 45px !important;
+        font-size: 14px !important;
+        background: var(--gold) !important;
+        color: var(--primary) !important;
+        border-radius: 50px !important;
+        border: none;
+    }
+
+}
 .lang-btn {
     background: var(--gold);
     color: var(--primary);
@@ -2184,4 +2235,41 @@ border-right: 5px solid var(--primary);
         width: 100%;
         margin: 10px 0 !important;
     }
+}
+/* تحسين عرض بيانات التواصل في الفوتر */
+.footer-contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-contact-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.footer-contact-item i {
+    color: var(--gold);
+    width: 20px;
+    text-align: center;
+}
+
+.footer-contact-item:hover {
+    color: var(--gold);
+    transform: translateX(-5px);
+}
+
+/* في حال كان الموقع إنجليزي */
+[lang="en"] .footer-contact-item:hover {
+    transform: translateX(5px);
+}
+
+/* تنسيق العنوان في الفوتر */
+.footer-contact-item i.fa-map-marker-alt {
+    color: #ff4d4d; /* لون أحمر خفيف للوكيشن ليبرز */
 }

@@ -22,18 +22,23 @@
             </div>
             <nav id="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="index.html#marble" class="active">جلي الرخام</a></li>
+                    <li><a href="index.html#home">الرئيسية</a></li>
+                    <li><a href="index.html#about">من نحن</a></li>
+                    <li><a href="index.html#marble">جلي الرخام</a></li>
                     <li><a href="index.html#cleaning">التنظيف</a></li>
                     <li><a href="index.html#decor">الديكور</a></li>
                     <li><a href="index.html#maintenance">الصيانة</a></li>
+                    <li class="mobile-lang-item">
+                        <button id="langSwitcher" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            English
+                        </button>
+                    </li>
                 </ul>
             </nav>
-            <div class="header-actions">
-                <button id="langSwitcher" class="lang-btn">
-                    <i class="fas fa-globe"></i> <span id="langText">English</span>
-                </button>
-                <div class="menu-toggle" id="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
@@ -98,23 +103,21 @@
             </div>
 
             <!-- الجانب الأيسر: صندوق التواصل (Sticky Sidebar) -->
-            <aside class="article-sidebar">
-                <div class="sticky-cta-box reveal">
-                    <i class="fas fa-calendar-check cta-icon"></i>
-                    <h3>اطلب الخدمة الآن</h3>
-                    <p>فريقنا جاهز للوصول إليكم في أي مكان داخل المدينة.</p>
-
-                    <div class="sidebar-btns">
-                        <a href="https://wa.me/971566049805" class="btn-wa-sidebar">
-                            <i class="fab fa-whatsapp"></i> واتساب
-                        </a>
-                        <a href="tel:0566049805" class="btn-phone-sidebar">
-                            <i class="fas fa-phone-alt"></i> اتصل الآن
-                        </a>
+            <aside class="article-sidebar-side">
+                <div class="sticky-contact-card reveal">
+                    <div class="inner-cta">
+                        <i class="fas fa-headset main-cta-icon"></i>
+                        <h3>تواصل معنا الآن</h3>
+                        <p>نحن متواجدون في أبو ظبي لخدمتكم على مدار الساعة.</p>
+                        <a href="https://wa.me/971566049805" class="btn-cta-sidebar"><i class="fab fa-whatsapp"></i>
+                            اطلب الخدمة</a>
+                        <div class="sidebar-info-row">
+                            <span><i class="fas fa-phone-alt"></i> 0566049805</span><br>
+                            <span><i class="fas fa-map-marker-alt"></i> أبو ظبي</span>
+                        </div>
                     </div>
                 </div>
             </aside>
-
         </div>
     </main>
     <script src="script.js"></script>

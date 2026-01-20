@@ -16,46 +16,44 @@
 
 <body>
 
-<header class="main-header">
-    <div class="container navbar">
-        <div class="logo-area">
-            <img src="images/logo.png" alt="Logo" class="nav-logo">
-            <div class="brand-text">
-                <h1>إليزيه</h1>
-                <span class="lang-ar">لخدمات المباني</span>
+    <header class="main-header">
+        <div class="container navbar">
+            <div class="logo-area">
+                <img src="images/logo.png" alt="Logo" class="nav-logo">
+                <div class="brand-text">
+                    <h1>إليزيه</h1>
+                    <span class="lang-ar">لخدمات المباني</span>
+                </div>
+            </div>
+
+            <!-- القائمة الجانبية -->
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#marble">جلي الرخام</a></li>
+                    <li><a href="#cleaning">التنظيف</a></li>
+                    <li><a href="#decor">الديكور</a></li>
+                    <li><a href="#maintenance">الصيانة</a></li>
+                    <li class="mobile-lang-item">
+                        <button id="langSwitcher" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            English
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- أيقونة التلات شرطات -->
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-        
-        <!-- القائمة الجانبية -->
-        <nav id="nav-menu">
-            <ul class="nav-links">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#about">من نحن</a></li>
-                <li><a href="#marble">جلي الرخام</a></li>
-                <li><a href="#cleaning">التنظيف</a></li>
-                <li><a href="#decor">الديكور</a></li>
-                <li><a href="#maintenance">الصيانة</a></li>
-                
-                <!-- زر اللغة أصبح هنا داخل القائمة في الجوال -->
-                <li class="mobile-lang-item">
-                    <button id="langSwitcher" class="lang-btn-nav">
-                        <i class="fas fa-globe"></i>
-                        <span id="langText">English</span>
-                    </button>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- أيقونة التلات شرطات -->
-        <div class="menu-toggle" id="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-    </div>
-</header>
+    </header>
 
     <!-- الواجهة المتحركة ملء الشاشة (Hero Section) -->
     <section id="home" class="hero">
-        <div class="hero-bg"></div> 
+        <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h2 class="animate-up lang-ar">فخامة المباني تبدأ من خدماتنا</h2>
@@ -293,22 +291,24 @@
             <!-- العمود الثالث: تواصل معنا -->
             <div class="footer-col contact-col">
                 <h4 class="footer-title lang-ar">تواصل معنا</h4>
-                <h4 class="footer-title lang-en">Contact Us</h4>
-                <div class="footer-contact-info">
-                    <a href="tel:0566049805" class="contact-item">
-                        <i class="fas fa-phone-alt"></i> 0566049805
+                <div class="footer-contact-links">
+                    <a href="tel:+971566049805" class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i> <span dir="ltr">056 604 9805</span>
                     </a>
-                    <a href="https://wa.me/971566049805" class="contact-item" target="_blank">
-                        <i class="fab fa-whatsapp"></i> واتساب مباشر
+                    <a href="tel:+971585340048" class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i> <span dir="ltr">058 534 0048</span>
                     </a>
-                    <a href="mailto:elyzeebs@gmail.com" class="contact-item">
+                    <a href="mailto:elyzeebs@gmail.com" class="footer-contact-item">
                         <i class="fas fa-envelope"></i> elyzeebs@gmail.com
                     </a>
-                </div>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-snapchat"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="mailto:Elyzeebs@outlook.com" class="footer-contact-item">
+                        <i class="fas fa-envelope"></i> Elyzeebs@outlook.com
+                    </a>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="lang-ar">أبو ظبي، الإمارات</span>
+                        <span class="lang-en">Abu Dhabi, UAE</span>
+                    </div>
                 </div>
             </div>
 
@@ -317,18 +317,21 @@
         <!-- شريط الحقوق السفلي -->
         <div class="footer-bottom-bar">
             <div class="container text-center">
-                <p>&copy; 2026 جميع الحقوق محفوظة لشركة إليزيه لخدمات المباني</p>
+                <p style="text-align: center;">&copy; 2026 جميع الحقوق محفوظة لشركة إليزيه لخدمات المباني</p>
+                <p style="text-align: center;">Design and programming by<a
+                        href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL"
+                        target="_blank"><strong style="color: #c5a059;">GMTWEB</strong> </a> </p>
             </div>
         </div>
     </footer>
 
     <div class="floating-actions">
-        <!-- زر الواتساب -->
+        <!-- واتساب الرقم الأساسي -->
         <a href="https://wa.me/971566049805" target="_blank" class="float-btn whatsapp" title="واتساب">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <!-- زر الاتصال -->
-        <a href="tel:0566049805" class="float-btn phone" title="اتصال هاتفي">
+        <!-- اتصال الرقم الأساسي -->
+        <a href="tel:+971566049805" class="float-btn phone" title="اتصال هاتفي">
             <i class="fas fa-phone-alt"></i>
         </a>
     </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" id="mainHtml">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="details-page">
 
     <!-- الهيدر الموحد -->
@@ -20,17 +22,25 @@
                     <span>لخدمات المباني</span>
                 </div>
             </div>
-            <nav id="nav-menu">
+           <nav id="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#home">الرئيسية</a></li>
+                    <li><a href="index.html#about">من نحن</a></li>
                     <li><a href="index.html#marble">جلي الرخام</a></li>
                     <li><a href="index.html#cleaning">التنظيف</a></li>
                     <li><a href="index.html#decor">الديكور</a></li>
-                    <li><a href="index.html#maintenance" class="active">الصيانة</a></li>
+                    <li><a href="index.html#maintenance">الصيانة</a></li>
+                    <li class="mobile-lang-item">
+                        <button id="langSwitcher" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            English
+                        </button>
+                    </li>
                 </ul>
             </nav>
-            <div class="header-actions">
-                <button id="langSwitcher" class="lang-btn"><i class="fas fa-globe"></i> English</button>
+
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
@@ -40,18 +50,20 @@
         <!-- <div class="hero-overlay"></div> -->
         <div class="container hero-content">
             <h1 class="animate-up" style="text-align: center;">الصيانة العامة للمنازل والفلل</h1>
-            <p class="animate-up"style="text-align: center;">أمان، كفاءة، وراحة بال تدوم طويلاً</p>
+            <p class="animate-up" style="text-align: center;">أمان، كفاءة، وراحة بال تدوم طويلاً</p>
         </div>
     </section>
 
     <!-- المحتوى الرئيسي -->
     <main class="container section-padding">
         <div class="article-layout-grid">
-            
+
             <!-- الجانب الأيمن: المقال والخدمات -->
             <div class="article-main-side reveal">
                 <h2 class="gold-text mb-3">أهمية الصيانة الدورية لمنزلك</h2>
-                <p class="article-intro-text">تعتبر الصيانة العامة أحد الأعمدة الأساسية للحفاظ على البنية التحتية للمباني. نحن في إليزيه نوفر لك فريقاً متكاملاً يضمن سلامة الأنظمة الكهربائية والسباكة، مما يرفع من قيمة عقارك ويحميه من التدهور.</p>
+                <p class="article-intro-text">تعتبر الصيانة العامة أحد الأعمدة الأساسية للحفاظ على البنية التحتية
+                    للمباني. نحن في إليزيه نوفر لك فريقاً متكاملاً يضمن سلامة الأنظمة الكهربائية والسباكة، مما يرفع من
+                    قيمة عقارك ويحميه من التدهور.</p>
 
                 <!-- شبكة المميزات الثلاثية -->
                 <div class="importance-mini-grid">
@@ -76,27 +88,40 @@
                 <div class="numbered-services-list">
                     <div class="n-service-item">
                         <div class="n-number">01</div>
-                        <div class="n-text"><h4><strong>الصيانة الكهربائية:</strong> فحص الأسلاك، المفاتيح، الإضاءة، وأنظمة الحماية.</h4></div>
+                        <div class="n-text">
+                            <h4><strong>الصيانة الكهربائية:</strong> فحص الأسلاك، المفاتيح، الإضاءة، وأنظمة الحماية.
+                            </h4>
+                        </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">02</div>
-                        <div class="n-text"><h4><strong>السباكة والأنابيب:</strong> كشف التسريبات، صيانة المحابس، وتنظيف المجاري.</h4></div>
+                        <div class="n-text">
+                            <h4><strong>السباكة والأنابيب:</strong> كشف التسريبات، صيانة المحابس، وتنظيف المجاري.</h4>
+                        </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">03</div>
-                        <div class="n-text"><h4><strong>التكييف والتهوية:</strong> صيانة أنظمة التكييف وتنظيف الفلاتر وضبط الأداء.</h4></div>
+                        <div class="n-text">
+                            <h4><strong>التكييف والتهوية:</strong> صيانة أنظمة التكييف وتنظيف الفلاتر وضبط الأداء.</h4>
+                        </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">04</div>
-                        <div class="n-text"><h4><strong>البنية التحتية:</strong> إصلاح التشققات، صيانة الأسطح، والأبواب والنوافذ.</h4></div>
+                        <div class="n-text">
+                            <h4><strong>البنية التحتية:</strong> إصلاح التشققات، صيانة الأسطح، والأبواب والنوافذ.</h4>
+                        </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">05</div>
-                        <div class="n-text"><h4><strong>المسابح والحدائق:</strong> تنظيف المسابح، ضبط الكيماويات، وتهذيب الأشجار.</h4></div>
+                        <div class="n-text">
+                            <h4><strong>المسابح والحدائق:</strong> تنظيف المسابح، ضبط الكيماويات، وتهذيب الأشجار.</h4>
+                        </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">06</div>
-                        <div class="n-text"><h4><strong>الأنظمة الأمنية:</strong> صيانة كاميرات المراقبة وأنظمة الإنذار ضد السرقة.</h4></div>
+                        <div class="n-text">
+                            <h4><strong>الأنظمة الأمنية:</strong> صيانة كاميرات المراقبة وأنظمة الإنذار ضد السرقة.</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,22 +130,18 @@
             <aside class="article-sidebar-side">
                 <div class="sticky-contact-card reveal">
                     <div class="inner-cta">
-                        <i class="fas fa-tools main-cta-icon"></i>
-                        <h3>لماذا تختار إليزيه؟</h3>
-                        <ul class="sidebar-check-list">
-                            <li><i class="fas fa-check"></i> خبرة واحترافية عالية</li>
-                            <li><i class="fas fa-check"></i> حلول شاملة ومتكاملة</li>
-                            <li><i class="fas fa-check"></i> تعاقدات مرنة ودورية</li>
-                        </ul>
-                        <p>احصل على استشارة فنية مجانية الآن</p>
-                        <a href="https://wa.me/971566049805" class="btn-cta-sidebar"><i class="fab fa-whatsapp"></i> اطلب فني الآن</a>
+                        <i class="fas fa-headset main-cta-icon"></i>
+                        <h3>تواصل معنا الآن</h3>
+                        <p>نحن متواجدون في أبو ظبي لخدمتكم على مدار الساعة.</p>
+                        <a href="https://wa.me/971566049805" class="btn-cta-sidebar"><i class="fab fa-whatsapp"></i>
+                            اطلب الخدمة</a>
                         <div class="sidebar-info-row">
-                            <span><i class="fas fa-phone-alt"></i> 0566049805</span>
+                            <span><i class="fas fa-phone-alt"></i> 0566049805</span><br>
+                            <span><i class="fas fa-map-marker-alt"></i> أبو ظبي</span>
                         </div>
                     </div>
                 </div>
             </aside>
-
         </div>
     </main>
 
@@ -134,4 +155,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

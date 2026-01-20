@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" id="mainHtml">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="details-page">
 
     <!-- الهيدر -->
@@ -22,18 +24,23 @@
             </div>
             <nav id="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="index.html#marble" class="active">جلي الرخام</a></li>
+                    <li><a href="index.html#home">الرئيسية</a></li>
+                    <li><a href="index.html#about">من نحن</a></li>
+                    <li><a href="index.html#marble">جلي الرخام</a></li>
                     <li><a href="index.html#cleaning">التنظيف</a></li>
                     <li><a href="index.html#decor">الديكور</a></li>
                     <li><a href="index.html#maintenance">الصيانة</a></li>
+                    <li class="mobile-lang-item">
+                        <button id="langSwitcher" class="lang-btn">
+                            <i class="fas fa-globe"></i>
+                            English
+                        </button>
+                    </li>
                 </ul>
             </nav>
-            <div class="header-actions">
-                <button id="langSwitcher" class="lang-btn">
-                    <i class="fas fa-globe"></i> <span id="langText">English</span>
-                </button>
-                <div class="menu-toggle" id="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
@@ -43,22 +50,23 @@
         <!-- <div class="hero-overlay"></div> -->
         <div class="container hero-content">
             <h1 class="animate-up" style="text-align: center;">جلي وتلميع الرخام</h1>
-            <p class="animate-up"style="text-align: center;">نستعيد فخامة أرضياتكم بأحدث التقنيات</p>
+            <p class="animate-up" style="text-align: center;">نستعيد فخامة أرضياتكم بأحدث التقنيات</p>
         </div>
     </section>
 
     <!-- المحتوى الرئيسي -->
     <main class="container">
-        
+
         <!-- مقدمة القسم -->
         <div class="section-spacing text-center reveal" style="margin: 35px;">
-            <h2 class="gold-text"style="text-align: center;">استعادة جمال الرخام الطبيعي</h2>
-            <p class="section-desc">تُعد الأرضيات الرخامية من أفخم الأنواع التي تضفي لمسة من الرقي، ولكنها تتأثر بالزمن. خدماتنا تضمن لك استعادة رونقها الأصلي من خلال معالجة الخدوش والتلميع بالكريستال.</p>
+            <h2 class="gold-text" style="text-align: center;">استعادة جمال الرخام الطبيعي</h2>
+            <p class="section-desc">تُعد الأرضيات الرخامية من أفخم الأنواع التي تضفي لمسة من الرقي، ولكنها تتأثر بالزمن.
+                خدماتنا تضمن لك استعادة رونقها الأصلي من خلال معالجة الخدوش والتلميع بالكريستال.</p>
         </div>
 
         <!-- المميزات (4 كروت بجانب بعض) -->
         <div class="section-spacing reveal">
-            <h3 class="text-center section-subtitle"style="text-align: center;">لماذا يجب عليك اختيار خدماتنا؟</h3>
+            <h3 class="text-center section-subtitle" style="text-align: center;">لماذا يجب عليك اختيار خدماتنا؟</h3>
             <div class="features-details-grid">
                 <div class="f-detail-card">
                     <i class="fas fa-sparkles"></i>
@@ -85,7 +93,7 @@
 
         <!-- خطوات العمل -->
         <div class="section-spacing reveal">
-            <h3 class="text-center section-subtitle"style="text-align: center;">كيفية عمل جلي وتلميع الرخام</h3>
+            <h3 class="text-center section-subtitle" style="text-align: center;">كيفية عمل جلي وتلميع الرخام</h3>
             <div class="steps-grid-details">
                 <div class="step-card">
                     <div class="step-circle">1</div>
@@ -124,15 +132,17 @@
 
         <!-- أزرار التواصل -->
         <div class="section-spacing text-center reveal" style="margin: 30px;">
-            <p class="cta-text"style="text-align: center;">هل ترغب في تجديد مظهر رخامك الآن؟</p>
+            <p class="cta-text" style="text-align: center;">هل ترغب في تجديد مظهر رخامك الآن؟</p>
             <div class="btns-flex">
-                <a href="https://wa.me/971566049805" class="btn-gold"><i class="fab fa-whatsapp"></i> تواصل معنا واتساب</a>
+                <a href="https://wa.me/971566049805" class="btn-gold"><i class="fab fa-whatsapp"></i> تواصل معنا
+                    واتساب</a>
                 <a href="tel:0566049805" class="btn-outline-blue">اتصل بنا الآن</a>
             </div>
         </div>
     </main>
 
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
