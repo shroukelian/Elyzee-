@@ -2269,7 +2269,44 @@ border-right: 5px solid var(--primary);
     transform: translateX(5px);
 }
 
-/* تنسيق العنوان في الفوتر */
 .footer-contact-item i.fa-map-marker-alt {
-    color: #ff4d4d; /* لون أحمر خفيف للوكيشن ليبرز */
+    color: #ff4d4d; 
+}
+@media (max-width: 768px) {
+    .footer-col.contact-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .footer-contact-links {
+        width: 100%;
+        align-items: center !important; 
+    }
+
+    .footer-contact-item {
+        justify-content: center !important;
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* 3. جعل الخط الذهبي تحت العنوان يتوسط الشاشة */
+    .footer-col.contact-col h4.footer-title::after {
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%);
+    }
+
+    /* 4. توسيط أيقونات السوشيال ميديا */
+    .footer-social-icons {
+        justify-content: center !important;
+        margin-top: 20px;
+    }
+
+    /* 5. ضبط المسافة بين الأرقام لسهولة الضغط */
+    .footer-contact-item span {
+        font-size: 16px;
+    }
 }
