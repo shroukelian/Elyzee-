@@ -2730,44 +2730,95 @@ body {
     transition: 0.3s;
 }
 
-.imp-card-mini i { font-size: 30px; color: var(--gold); margin-bottom: 10px; }
+.imp-card-mini i {
+    font-size: 30px;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
 
 /* القائمة المرقمة */
-.numbered-services-list { display: flex; flex-direction: column; gap: 15px; }
+.numbered-services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
 .n-service-item {
-    display: flex; align-items: center; gap: 20px;
-    background: #fff; padding: 20px; border-radius: 15px;
-    border: 1px solid #f5f5f5; box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
     transition: 0.3s;
 }
 
-.n-service-item:hover { border-right: 5px solid var(--primary); transform: translateX(-10px); }
-[lang="en"] .n-service-item:hover { border-right: none; border-left: 5px solid var(--primary); transform: translateX(10px); }
+.n-service-item:hover {
+    border-right: 5px solid var(--primary);
+    transform: translateX(-10px);
+}
 
-.n-number { font-size: 24px; font-weight: 900; color: var(--gold); opacity: 0.4; }
+[lang="en"] .n-service-item:hover {
+    border-right: none;
+    border-left: 5px solid var(--primary);
+    transform: translateX(10px);
+}
+
+.n-number {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--gold);
+    opacity: 0.4;
+}
 
 /* السايد بار (Sticky) */
 .sticky-contact-card {
-    position: sticky; top: 110px;
-    background: var(--primary); /* العنابي الفخم */
-    color: white; padding: 40px 25px;
-    border-radius: 30px; text-align: center;
+    position: sticky;
+    top: 110px;
+    background: var(--primary);
+    /* العنابي الفخم */
+    color: white;
+    padding: 40px 25px;
+    border-radius: 30px;
+    text-align: center;
 }
 
-.main-cta-icon { font-size: 45px; color: var(--gold); margin-bottom: 20px; }
+.main-cta-icon {
+    font-size: 45px;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
 
 .btn-wa-sidebar {
-    display: flex; align-items: center; justify-content: center; gap: 10px;
-    background: #25d366; color: #fff; padding: 15px; border-radius: 12px;
-    text-decoration: none; font-weight: bold; margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #25d366;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 25px 0;
 }
 
 /* الموبايل */
 @media (max-width: 992px) {
-    .article-layout-grid { grid-template-columns: 1fr; }
-    .importance-mini-grid { grid-template-columns: 1fr; }
-    .sticky-contact-card { position: static; margin-top: 40px; }
+    .article-layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .importance-mini-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sticky-contact-card {
+        position: static;
+        margin-top: 40px;
+    }
 }
 
 
@@ -2778,9 +2829,9 @@ body {
     margin-top: -80px;
 }
 
-/* تنسيق السايد بار في الصيانة */
 .sticky-contact-card {
-    background: var(--primary); /* اللون العنابي */
+    background: var(--primary);
+    /* اللون العنابي */
     color: white;
     padding: 40px 25px;
     border-radius: 30px;
@@ -2796,7 +2847,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* ضبط القائمة المرقمة */
 .n-service-item {
     border-right: 5px solid var(--primary);
     transition: 0.3s ease;
@@ -2805,10 +2855,9 @@ body {
 .n-service-item:hover {
     border-right-color: var(--gold);
     background: #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* في حالة الإنجليزية نعكس الحدود */
 [lang="en"] .n-service-item {
     border-right: none;
     border-left: 5px solid var(--primary);
@@ -2819,9 +2868,10 @@ body {
 }
 
 
-/* --- تنسيقات صفحة تفاصيل الرخام --- */
 .marble-hero-bg {
-    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000');
+    background-image: url('images/سيراميك1.jpeg');
+    background-size: cover;
+    background-position: center;
     height: 450px;
     margin-top: -80px;
 }
@@ -2831,25 +2881,25 @@ body {
     margin: 40px auto;
 }
 
-/* شبكة البطاقات 4 في الصف */
-.features-details-grid, .steps-grid-details {
+.features-details-grid,
+.steps-grid-details {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-top: 30px;
 }
 
-.f-detail-card, .step-card {
+.f-detail-card,
+.step-card {
     background: #fff;
     padding: 30px 15px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     border: 1px solid #f0f0f0;
     transition: 0.3s;
 }
 
-/* توسيط الأزرار */
 .btns-flex-centered {
     display: flex;
     justify-content: center;
@@ -2857,12 +2907,406 @@ body {
     margin-top: 30px;
 }
 
-/* الموبايل */
 @media (max-width: 992px) {
-    .features-details-grid, .steps-grid-details { grid-template-columns: repeat(2, 1fr); }
+
+    .features-details-grid,
+    .steps-grid-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 600px) {
-    .features-details-grid, .steps-grid-details { grid-template-columns: 1fr; }
-    .btns-flex-centered { flex-direction: column; align-items: center; }
+
+    .features-details-grid,
+    .steps-grid-details {
+        grid-template-columns: 1fr;
+    }
+
+    .btns-flex-centered {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer-social-icons a.inst:hover {
+    background: #E1306C;
+    color: #fff;
+}
+
+.footer-social-icons a.fb:hover {
+    background: #1877F2;
+    color: #fff;
+}
+
+.footer-social-icons a.snap:hover {
+    background: #FFFC00;
+    color: #000;
+}
+
+.footer-social-icons a.tiktok:hover {
+    background: #000000;
+    color: #fff;
+}
+
+.gallery-category h2 {
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.gallery-grid-pro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* --- تنسيق صفحة السياسات --- */
+
+.legal-hero {
+    background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1500') !important;
+    height: 300px !important;
+    /* تقليل الارتفاع لأنها صفحة نصية */
+}
+
+/* الكرت الأبيض الحاوي للنص */
+.legal-content-card {
+    background: #ffffff;
+    padding: 60px;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+    margin-top: -50px;
+    /* ليتداخل مع الهيرو بشكل أنيق */
+    position: relative;
+    z-index: 10;
+}
+
+.legal-section {
+    margin-bottom: 40px;
+}
+
+.legal-section h3 {
+    color: var(--primary);
+    /* اللون العنابي */
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.legal-section h3 i {
+    color: var(--gold);
+}
+
+.legal-section p {
+    font-size: 16px;
+    line-height: 2;
+    color: #555;
+    text-align: justify;
+}
+
+.divider-gold {
+    height: 1px;
+    background: linear-gradient(to left, transparent, var(--gold), transparent);
+    margin: 30px 0;
+    opacity: 0.3;
+}
+
+.legal-footer-note {
+    margin-top: 50px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* الموبايل */
+@media (max-width: 768px) {
+    .legal-content-card {
+        padding: 30px 20px;
+        margin-top: -30px;
+    }
+
+    .legal-section h3 {
+        font-size: 19px;
+    }
+
+    .legal-section p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}
+/* --- تنسيق معرض الأعمال الاحترافي --- */
+
+.gallery-category-section {
+    margin-bottom: 60px;
+}
+
+.category-header {
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+[lang="en"] .category-header { text-align: left; }
+
+.category-header h2 {
+    color: var(--primary);
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.header-line {
+    width: 60px;
+    height: 4px;
+    background: var(--gold);
+    border-radius: 2px;
+}
+
+/* شبكة الصور - 3 في الصف */
+.gallery-grid-pro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* توزيع 3 أعمدة متساوية */
+    gap: 20px; /* مسافة بين الصور */
+}
+
+.gallery-item-pro {
+    position: relative;
+    height: 350px; /* توحيد ارتفاع كل الصور */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.gallery-item-pro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* الأهم: يمنع تمطط الصورة ويحافظ على أبعادها */
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* تأثير عند الوقوف بالماوس */
+.gallery-item-pro:hover img {
+    transform: scale(1.1); /* زوم ناعم للصورة */
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 35, 71, 0.4); /* طبقة كحلية شفافة */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.img-overlay span {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    transform: translateY(20px);
+    transition: 0.3s;
+}
+
+.gallery-item-pro:hover .img-overlay { opacity: 1; }
+.gallery-item-pro:hover .img-overlay span { transform: translateY(0); }
+
+/* --- الموبايل والتابلت --- */
+@media (max-width: 992px) {
+    .gallery-grid-pro {
+        grid-template-columns: repeat(2, 1fr); /* صورتين في الصف */
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-grid-pro {
+        grid-template-columns: 1fr; /* صورة واحدة في الصف */
+    }
+    .gallery-item-pro {
+        height: 280px;
+    }
+}
+/* --- تنسيق عناوين المعرض مع الأيقونات --- */
+.category-header {
+    margin-bottom: 35px;
+    padding: 0 10px;
+}
+
+.category-header h2 {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* مسافة بين الأيقونة والنص */
+    color: var(--primary); /* اللون العنابي */
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.category-header h2 i {
+    color: var(--gold); /* الأيقونات تظهر بالذهبي */
+    font-size: 32px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+/* الخط الذهبي تحت العنوان */
+.header-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to left, var(--gold), transparent);
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+[lang="en"] .header-line {
+    background: linear-gradient(to right, var(--gold), transparent);
+}
+
+/* ضبط المسافة بين الأقسام */
+.mt-5 {
+    margin-top: 80px !important;
+}
+
+/* تحسين صور المعرض لمنع المطة */
+.gallery-item-pro {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 300px; /* ارتفاع موحد للديسكتوب */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.gallery-item-pro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يمنع التمطط ويقطع الزيادات باحترافية */
+    transition: 0.5s ease;
+}
+
+/* الموبايل */
+@media (max-width: 768px) {
+    .category-header h2 { font-size: 22px; justify-content: center; }
+    .header-line { margin: 10px auto; }
+    .gallery-item-pro { height: 250px; }
+}
+/* --- تنسيق اسم الشركة في الهيرو --- */
+.hero-brand-tag {
+    display: inline-block;
+    color: var(--gold); /* اللون الذهبي */
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px; /* مسافات بين الحروف للإنجليزي */
+    margin-bottom: 15px;
+    position: relative;
+    padding: 5px 20px;
+    /* تأثير توهج خفيف (Glow) */
+    text-shadow: 0 0 15px rgba(197, 160, 89, 0.6);
+}
+
+/* إضافة خطوط زخرفية بجانب الاسم */
+.hero-brand-tag::before,
+.hero-brand-tag::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--gold));
+}
+
+/* الخط اليمين */
+.hero-brand-tag::before {
+    right: -45px;
+}
+
+/* الخط اليسار */
+.hero-brand-tag::after {
+    left: -45px;
+    background: linear-gradient(to left, transparent, var(--gold));
+}
+
+/* أنيميشن إضافي لظهور الاسم أولاً */
+.hero-brand-tag {
+    animation: fadeInBlur 1.5s ease-out forwards;
+}
+
+@keyframes fadeInBlur {
+    0% { opacity: 0; filter: blur(10px); transform: scale(0.9); }
+    100% { opacity: 1; filter: blur(0); transform: scale(1); }
+}
+
+/* ضبط المقاس في الموبايل لكي لا يخرج عن الشاشة */
+@media (max-width: 768px) {
+    .hero-brand-tag {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+    .hero-brand-tag::before,
+    .hero-brand-tag::after {
+        width: 25px; /* تصغير الخطوط في الجوال */
+    }
+    .hero-brand-tag::before { right: -25px; }
+    .hero-brand-tag::after { left: -25px; }
+}
+/* --- اسم الشركة بنبض ذهبي وتوهج مستمر --- */
+.hero-brand-tag {
+    display: inline-block;
+    color: var(--gold);
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 8px 25px;
+    
+    /* تطبيق الأنيـمشن الجديد */
+    animation: luxuryPulse 3s infinite ease-in-out;
+    cursor: default;
+}
+
+/* --- أنيميشن النبض الملكي --- */
+@keyframes luxuryPulse {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 10px rgba(197, 160, 89, 0.5);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.08); /* تكبير خفيف جداً كأنه ينبض */
+        /* توهج ذهبي كثيف عند النبض */
+        text-shadow: 0 0 25px rgba(197, 160, 89, 0.9), 
+                     0 0 40px rgba(255, 255, 255, 0.4);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        text-shadow: 0 0 10px rgba(197, 160, 89, 0.5);
+        opacity: 0.9;
+    }
+}
+
+/* إضافة لمسة "الشيمر" (اللمعان المتحرك فوق الحروف) */
+.hero-brand-tag::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right, 
+        transparent, 
+        rgba(255, 255, 255, 0.4), 
+        transparent
+    );
+    transform: skewX(-25deg);
+    animation: goldShine 4s infinite;
+}
+
+@keyframes goldShine {
+    0% { left: -100%; }
+    20% { left: 200%; }
+    100% { left: 200%; }
 }
