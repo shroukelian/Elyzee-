@@ -258,24 +258,28 @@ body {
         backdrop-filter: blur(10px);
         display: flex !important;
         flex-direction: column !important;
-        
+
         /* التعديل هنا لتقليل الفراغات */
-        justify-content: center !important; /* يوسط الكتلة كاملة في نص الشاشة */
+        justify-content: center !important;
+        /* يوسط الكتلة كاملة في نص الشاشة */
         align-items: center !important;
-        gap: 10px !important; /* المسافة بين كل رابط والثاني */
-        
+        gap: 10px !important;
+        /* المسافة بين كل رابط والثاني */
+
         transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
         z-index: 2500;
     }
 
     .nav-links li {
-        margin: 5px 0 !important; /* تقليل المارجن */
+        margin: 5px 0 !important;
+        /* تقليل المارجن */
         width: 100%;
         text-align: center;
     }
 
     .nav-links li a {
-        font-size: 20px !important; /* تصغير الخط قليلاً ليبدو أرشق */
+        font-size: 20px !important;
+        /* تصغير الخط قليلاً ليبدو أرشق */
         padding: 10px 0 !important;
         display: block;
         color: #fff !important;
@@ -298,6 +302,7 @@ body {
     }
 
 }
+
 .lang-btn {
     background: var(--gold);
     color: var(--primary);
@@ -543,10 +548,12 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
+
 .btn-outline-blue:hover {
     background: var(--primary);
     color: white;
 }
+
 /* --- ضبط الجوال --- */
 @media (max-width: 992px) {
 
@@ -1056,7 +1063,7 @@ body {
 }
 
 .n-service-item:hover {
-border-right: 5px solid var(--primary);
+    border-right: 5px solid var(--primary);
     transform: translateX(-10px);
 }
 
@@ -1696,6 +1703,7 @@ border-right: 5px solid var(--primary);
         font-size: 26px;
     }
 }
+
 /* --- تنسيق سكشن من نحن الجديد --- */
 .about-main-flex {
     display: flex;
@@ -1704,10 +1712,18 @@ border-right: 5px solid var(--primary);
     margin-top: 40px;
 }
 
-.about-text-side { flex: 1.2; }
-.about-img-side { flex: 0.8; }
+.about-text-side {
+    flex: 1.2;
+}
 
-.maroon-text { color: var(--primary); font-weight: 900; }
+.about-img-side {
+    flex: 0.8;
+}
+
+.maroon-text {
+    color: var(--primary);
+    font-weight: 900;
+}
 
 .about-p {
     font-size: 18px;
@@ -1734,7 +1750,8 @@ border-right: 5px solid var(--primary);
 }
 
 .af-item:hover {
-    background: #fdf6f6; /* خلفية عنابية خفيفة جداً */
+    background: #fdf6f6;
+    /* خلفية عنابية خفيفة جداً */
     transform: translateX(-10px);
 }
 
@@ -1744,7 +1761,10 @@ border-right: 5px solid var(--primary);
     margin-top: 5px;
 }
 
-.af-item h4 { color: var(--primary); margin-bottom: 5px; }
+.af-item h4 {
+    color: var(--primary);
+    margin-bottom: 5px;
+}
 
 /* أزرار مخصصة */
 .btn-gold-fill {
@@ -1773,7 +1793,7 @@ border-right: 5px solid var(--primary);
     position: relative;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
 }
 
 .img-frame img {
@@ -1802,42 +1822,67 @@ border-right: 5px solid var(--primary);
     line-height: 1;
 }
 
-.experience-box-badge p { font-size: 12px; margin: 0; }
+.experience-box-badge p {
+    font-size: 12px;
+    margin: 0;
+}
 
 /* الموبايل */
 @media (max-width: 992px) {
-    .about-main-flex { flex-direction: column; text-align: center; gap: 40px; }
-    .af-item { text-align: right; }
-    .btn-gold-fill { margin-left: 0; margin-bottom: 15px; }
-    .about-action { display: flex; flex-direction: column; }
-    .experience-box-badge { left: 50%; transform: translateX(-50%); }
+    .about-main-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .af-item {
+        text-align: right;
+    }
+
+    .btn-gold-fill {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .about-action {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience-box-badge {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
+
 /* --- ضبط الموبايل الاحترافي --- */
 @media (max-width: 768px) {
-    
+
     /* 1. جعل القائمة الجانبية تخرج بشكل أنيق */
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%; /* مخفية */
+        right: -100%;
+        /* مخفية */
         width: 280px;
         height: 100vh;
         background: var(--primary);
         flex-direction: column !important;
         padding: 100px 30px;
         transition: 0.4s ease-in-out;
-        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
         z-index: 1000;
         display: flex !important;
     }
 
     .nav-links.active {
-        right: 0; /* تظهر عند الضغط */
+        right: 0;
+        /* تظهر عند الضغط */
     }
 
     .nav-links li {
         width: 100%;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         padding-bottom: 10px;
     }
 
@@ -1885,7 +1930,8 @@ border-right: 5px solid var(--primary);
         grid-template-columns: 1fr !important;
     }
 
-    .btn-gold-small, .btn-outline-gold {
+    .btn-gold-small,
+    .btn-outline-gold {
         width: 100%;
         max-width: 280px;
     }
@@ -1911,20 +1957,27 @@ border-right: 5px solid var(--primary);
     .menu-toggle {
         display: block;
     }
-    .fa-bars:before, .fa-navicon:before {
-    content: "\f0c9";
-    color: black;
+
+    .fa-bars:before,
+    .fa-navicon:before {
+        content: "\f0c9";
+        color: black;
+    }
 }
-}
+
 @media (max-width: 768px) {
+
     /* جعل القائمة خلفيتها كحلية داكنة (مثل الفوتر) */
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%; /* مخفية */
-        width: 100%; /* عرض كامل لشاشة الموبايل */
+        right: -100%;
+        /* مخفية */
+        width: 100%;
+        /* عرض كامل لشاشة الموبايل */
         height: 100vh;
-        background: #001a35 !important; /* لون كحلي غامق جداً */
+        background: #001a35 !important;
+        /* لون كحلي غامق جداً */
         display: flex !important;
         flex-direction: column;
         justify-content: center;
@@ -1943,17 +1996,19 @@ border-right: 5px solid var(--primary);
     }
 
     .nav-links li a {
-        color: #ffffff !important; /* نص أبيض صريح */
+        color: #ffffff !important;
+        /* نص أبيض صريح */
         font-size: 22px;
         font-weight: bold;
     }
 
     /* زر الإغلاق والتنسيق */
     .menu-toggle {
-        z-index: 2000; /* أعلى من القائمة */
+        z-index: 2000;
+        /* أعلى من القائمة */
         position: relative;
     }
-    
+
     /* منع التمرير عند فتح القائمة */
     body.menu-open {
         overflow: hidden;
@@ -1963,19 +2018,26 @@ border-right: 5px solid var(--primary);
 
 
 @media (max-width: 768px) {
+
     /* ضبط القائمة الجانبية */
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%; /* مخفية جهة اليمين */
-        width: 100%; /* عرض كامل لشاشة الموبايل */
+        right: -100%;
+        /* مخفية جهة اليمين */
+        width: 100%;
+        /* عرض كامل لشاشة الموبايل */
         height: 100vh;
-        background: rgba(0, 26, 53, 0.98) !important; /* لون كحلي داكن مع شفافية بسيطة */
-        backdrop-filter: blur(10px); /* تأثير زجاجي فخم */
+        background: rgba(0, 26, 53, 0.98) !important;
+        /* لون كحلي داكن مع شفافية بسيطة */
+        backdrop-filter: blur(10px);
+        /* تأثير زجاجي فخم */
         display: flex !important;
         flex-direction: column !important;
-        justify-content: center !important; /* توسيط العناصر رأسياً */
-        align-items: center !important; /* توسيط العناصر أفقياً */
+        justify-content: center !important;
+        /* توسيط العناصر رأسياً */
+        align-items: center !important;
+        /* توسيط العناصر أفقياً */
         transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
         z-index: 2500;
     }
@@ -1988,7 +2050,8 @@ border-right: 5px solid var(--primary);
     .nav-links li {
         margin: 15px 0;
         width: auto;
-        border: none !important; /* إزالة الخطوط الفاصلة القديمة */
+        border: none !important;
+        /* إزالة الخطوط الفاصلة القديمة */
     }
 
     .nav-links li a {
@@ -2011,16 +2074,18 @@ border-right: 5px solid var(--primary);
     .lang-btn-nav {
         background: var(--gold) !important;
         color: var(--primary) !important;
-        width: auto !important; /* يمنع الزر من أخذ عرض الشاشة كاملاً */
+        width: auto !important;
+        /* يمنع الزر من أخذ عرض الشاشة كاملاً */
         min-width: 150px;
         padding: 12px 30px !important;
-        border-radius: 50px !important; /* شكل كبسولة */
+        border-radius: 50px !important;
+        /* شكل كبسولة */
         font-size: 16px !important;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
     /* إخفاء أزرار الواتساب والاتصال عند فتح القائمة لعدم التداخل */
@@ -2036,9 +2101,10 @@ border-right: 5px solid var(--primary);
         position: relative;
     }
 }
+
 /* --- ضبط توسيط قسم الديكور في الموبايل --- */
 @media (max-width: 768px) {
-    
+
     /* توسيط الحاوية الرئيسية */
     .decor-main-grid {
         display: flex;
@@ -2065,7 +2131,8 @@ border-right: 5px solid var(--primary);
     .mini-features-grid {
         display: flex;
         flex-direction: column;
-        align-items: center; /* يوسط العناصر رأسياً */
+        align-items: center;
+        /* يوسط العناصر رأسياً */
         justify-content: center;
         width: 100%;
         gap: 15px;
@@ -2073,9 +2140,11 @@ border-right: 5px solid var(--primary);
 
     .mf-item {
         display: flex;
-        flex-direction: row; /* الحفاظ على الأيقونة بجانب النص */
+        flex-direction: row;
+        /* الحفاظ على الأيقونة بجانب النص */
         align-items: center;
-        justify-content: center; /* يوسط الأيقونة والنص معاً في السطر */
+        justify-content: center;
+        /* يوسط الأيقونة والنص معاً في السطر */
         width: 100%;
         gap: 10px;
         font-size: 15px;
@@ -2093,7 +2162,8 @@ border-right: 5px solid var(--primary);
 
     .action-btns a {
         width: 100%;
-        max-width: 280px; /* عرض ثابت للأزرار في الموبايل لتبدو أرشق */
+        max-width: 280px;
+        /* عرض ثابت للأزرار في الموبايل لتبدو أرشق */
         margin: 0 !important;
         text-align: center;
     }
@@ -2103,12 +2173,15 @@ border-right: 5px solid var(--primary);
         height: 45px !important;
     }
 }
+
 @media (max-width: 768px) {
-    .footer-col h4.footer-title::after{
+    .footer-col h4.footer-title::after {
         display: none;
     }
+
     .section-padding {
-        padding: 30px 0 !important; /* تقليل من 100 إلى 30 */
+        padding: 30px 0 !important;
+        /* تقليل من 100 إلى 30 */
     }
 
     /* 2. تقليل المسافة بين العنوان والمحتوى */
@@ -2128,12 +2201,14 @@ border-right: 5px solid var(--primary);
     }
 
     .m-grid-items {
-        gap: 10px !important; /* تقليل المسافة بين كروت الكهرباء والسباكة */
+        gap: 10px !important;
+        /* تقليل المسافة بين كروت الكهرباء والسباكة */
     }
 
     .m-card {
         padding: 15px !important;
-        min-height: auto !important; /* لكي لا يأخذ طولاً زائداً */
+        min-height: auto !important;
+        /* لكي لا يأخذ طولاً زائداً */
     }
 
     .m-card i {
@@ -2155,7 +2230,8 @@ border-right: 5px solid var(--primary);
 
     .clean-pro-card {
         padding: 20px !important;
-        min-height: auto !important; /* إزالة الارتفاع الكبير المسبب للفراغ */
+        min-height: auto !important;
+        /* إزالة الارتفاع الكبير المسبب للفراغ */
         margin-bottom: 10px;
     }
 
@@ -2172,11 +2248,14 @@ border-right: 5px solid var(--primary);
         font-size: 22px;
     }
 }
+
 @media (max-width: 768px) {
     .m-grid-items {
         display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important; /* السر هنا */
-        gap: 12px !important; /* مسافة بسيطة بين المربعات */
+        grid-template-columns: repeat(2, 1fr) !important;
+        /* السر هنا */
+        gap: 12px !important;
+        /* مسافة بسيطة بين المربعات */
         margin-top: 20px !important;
     }
 
@@ -2188,17 +2267,19 @@ border-right: 5px solid var(--primary);
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 160px !important; /* توحيد الارتفاع ليكونوا متساويين */
+        min-height: 160px !important;
+        /* توحيد الارتفاع ليكونوا متساويين */
         background: #ffffff !important;
         border: 1px solid #f0f0f0 !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.03) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
     }
 
     /* 3. تصغير الأيقونات والنصوص لتناسب العرض الجديد */
     .m-card i {
         font-size: 28px !important;
         margin-bottom: 12px !important;
-        background: rgba(158, 27, 35, 0.05); /* خلفية خفيفة خلف الأيقونة */
+        background: rgba(158, 27, 35, 0.05);
+        /* خلفية خفيفة خلف الأيقونة */
         width: 50px;
         height: 50px;
         display: flex;
@@ -2208,12 +2289,14 @@ border-right: 5px solid var(--primary);
     }
 
     .m-card h4 {
-        font-size: 14px !important; /* تصغير العنوان قليلاً */
+        font-size: 14px !important;
+        /* تصغير العنوان قليلاً */
         margin-bottom: 5px !important;
     }
 
     .m-card p {
-        font-size: 11px !important; /* تصغير الوصف ليكون سطرين فقط */
+        font-size: 11px !important;
+        /* تصغير الوصف ليكون سطرين فقط */
         line-height: 1.4 !important;
         color: #888 !important;
     }
@@ -2230,12 +2313,14 @@ border-right: 5px solid var(--primary);
         font-size: 20px !important;
     }
 
-    .btn-gold-small, .btn-outline-gold {
+    .btn-gold-small,
+    .btn-outline-gold {
         display: block;
         width: 100%;
         margin: 10px 0 !important;
     }
 }
+
 /* تحسين عرض بيانات التواصل في الفوتر */
 .footer-contact-links {
     display: flex;
@@ -2270,19 +2355,20 @@ border-right: 5px solid var(--primary);
 }
 
 .footer-contact-item i.fa-map-marker-alt {
-    color: #ff4d4d; 
+    color: #ff4d4d;
 }
+
 @media (max-width: 768px) {
     .footer-col.contact-col {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         text-align: center;
     }
 
     .footer-contact-links {
         width: 100%;
-        align-items: center !important; 
+        align-items: center !important;
     }
 
     .footer-contact-item {
@@ -2309,4 +2395,474 @@ border-right: 5px solid var(--primary);
     .footer-contact-item span {
         font-size: 16px;
     }
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 26, 53, 0.98) !important;
+        backdrop-filter: blur(10px);
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        z-index: 2500;
+
+        /* الحالة الافتراضية للإغلاق (عربي) */
+        right: -100%;
+        left: auto;
+    }
+
+    /* عندما تكون القائمة مفتوحة في العربي */
+    [lang="ar"] .nav-links.active {
+        right: 0 !important;
+        left: auto !important;
+    }
+
+    /* الحالة الافتراضية للإغلاق (إنجليزي) */
+    [lang="en"] .nav-links {
+        left: -100% !important;
+        right: auto !important;
+    }
+
+    /* عندما تكون القائمة مفتوحة في الإنجليزي */
+    [lang="en"] .nav-links.active {
+        left: 0 !important;
+        right: auto !important;
+    }
+
+    /* زر الإغلاق X - تأكد أن مكانه لا يعيق الضغط */
+    .menu-toggle {
+        z-index: 3000;
+        position: relative;
+    }
+}
+
+/* عكس ترتيب سكشن الرخام في الإنجليزية */
+[lang="en"] .marble-main-grid {
+    direction: ltr;
+}
+
+/* ضبط المسافات بين الأيقونة والنص في الإنجليزية */
+[lang="en"] .f-item i {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+/* ضبط مكان بادج الخبرة في الإنجليزية */
+[lang="en"] .experience-tag {
+    right: auto;
+    left: 20px;
+}
+
+/* تنسيق الأزرار لتبدو متناسقة */
+.action-btns {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.action-btns .btn-gold,
+.action-btns .btn-outline {
+    flex: 1;
+    text-align: center;
+    padding: 12px 10px;
+    white-space: nowrap;
+}
+
+/* الموبايل */
+@media (max-width: 768px) {
+    .action-btns {
+        flex-direction: column;
+    }
+}
+
+
+/* عكس اتجاه شبكة الديكور في الإنجليزية */
+[lang="en"] .decor-main-grid {
+    direction: ltr;
+}
+
+/* ضبط محاذاة المميزات في الإنجليزية */
+[lang="en"] .mf-item {
+    justify-content: flex-start;
+}
+
+[lang="en"] .mf-item i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* ضبط مكان البادج العائم في الإنجليزية */
+[lang="en"] .floating-badge {
+    left: auto;
+    right: 20px;
+}
+
+/* تحسين شكل الأزرار لتبدو متساوية */
+.action-btns {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.action-btns a {
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .action-btns {
+        flex-direction: column;
+    }
+
+    .action-btns a {
+        width: 100%;
+    }
+}
+
+
+/* ضبط اتجاه النصوص في كروت الصيانة للغة الإنجليزية */
+[lang="en"] .m-card {
+    text-align: left;
+}
+
+/* في الموبايل يفضل بقاء التوسيط للجمالية */
+@media (max-width: 768px) {
+    [lang="en"] .m-card {
+        text-align: center;
+    }
+}
+
+/* ضبط المسافة للأيقونات في الإنجليزية */
+[lang="en"] .m-card i {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+/* تحسين شكل الأزرار في الصندوق الجانبي */
+.m-cta-box .mt-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-gold-small,
+.btn-outline-gold {
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+/* --- تنسيق الفوتر الشامل --- */
+.main-footer-dark {
+    color: #ffffff;
+    padding: 80px 0 0;
+    margin-top: 100px;
+    border-top: 3px solid var(--gold);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 60px;
+}
+
+.footer-title {
+    color: var(--gold);
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+    transform: translateX(-5px);
+    display: inline-block;
+}
+
+[lang="en"] .footer-links a:hover {
+    transform: translateX(5px);
+}
+
+.footer-contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact-item i {
+    color: var(--gold);
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.footer-social-icons a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.footer-social-icons a:hover {
+    background: var(--gold);
+    color: #001a35;
+    transform: translateY(-5px);
+}
+
+/* شريط الحقوق */
+.footer-bottom-bar {
+    padding: 25px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-copy-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #888;
+}
+
+.dev-credit a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* الموبايل */
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-contact-item {
+        justify-content: center;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+    }
+
+    .footer-copy-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+/* تقسيم المقال والسايد بار */
+.article-layout-grid {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* شبكة المميزات */
+.importance-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.imp-card-mini {
+    background: #fdfdfd;
+    padding: 25px 15px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.imp-card-mini i { font-size: 30px; color: var(--gold); margin-bottom: 10px; }
+
+/* القائمة المرقمة */
+.numbered-services-list { display: flex; flex-direction: column; gap: 15px; }
+
+.n-service-item {
+    display: flex; align-items: center; gap: 20px;
+    background: #fff; padding: 20px; border-radius: 15px;
+    border: 1px solid #f5f5f5; box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+    transition: 0.3s;
+}
+
+.n-service-item:hover { border-right: 5px solid var(--primary); transform: translateX(-10px); }
+[lang="en"] .n-service-item:hover { border-right: none; border-left: 5px solid var(--primary); transform: translateX(10px); }
+
+.n-number { font-size: 24px; font-weight: 900; color: var(--gold); opacity: 0.4; }
+
+/* السايد بار (Sticky) */
+.sticky-contact-card {
+    position: sticky; top: 110px;
+    background: var(--primary); /* العنابي الفخم */
+    color: white; padding: 40px 25px;
+    border-radius: 30px; text-align: center;
+}
+
+.main-cta-icon { font-size: 45px; color: var(--gold); margin-bottom: 20px; }
+
+.btn-wa-sidebar {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    background: #25d366; color: #fff; padding: 15px; border-radius: 12px;
+    text-decoration: none; font-weight: bold; margin: 25px 0;
+}
+
+/* الموبايل */
+@media (max-width: 992px) {
+    .article-layout-grid { grid-template-columns: 1fr; }
+    .importance-mini-grid { grid-template-columns: 1fr; }
+    .sticky-contact-card { position: static; margin-top: 40px; }
+}
+
+
+/* خلفية هيرو الصيانة */
+.maintenance-hero-bg {
+    background-image: url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=2000');
+    height: 450px;
+    margin-top: -80px;
+}
+
+/* تنسيق السايد بار في الصيانة */
+.sticky-contact-card {
+    background: var(--primary); /* اللون العنابي */
+    color: white;
+    padding: 40px 25px;
+    border-radius: 30px;
+    text-align: center;
+    position: sticky;
+    top: 110px;
+    box-shadow: 0 20px 50px rgba(158, 27, 35, 0.3);
+}
+
+.main-cta-icon {
+    font-size: 50px;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+/* ضبط القائمة المرقمة */
+.n-service-item {
+    border-right: 5px solid var(--primary);
+    transition: 0.3s ease;
+}
+
+.n-service-item:hover {
+    border-right-color: var(--gold);
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* في حالة الإنجليزية نعكس الحدود */
+[lang="en"] .n-service-item {
+    border-right: none;
+    border-left: 5px solid var(--primary);
+}
+
+[lang="en"] .n-service-item:hover {
+    border-left-color: var(--gold);
+}
+
+
+/* --- تنسيقات صفحة تفاصيل الرخام --- */
+.marble-hero-bg {
+    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000');
+    height: 450px;
+    margin-top: -80px;
+}
+
+.intro-box-centered {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* شبكة البطاقات 4 في الصف */
+.features-details-grid, .steps-grid-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.f-detail-card, .step-card {
+    background: #fff;
+    padding: 30px 15px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+    transition: 0.3s;
+}
+
+/* توسيط الأزرار */
+.btns-flex-centered {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* الموبايل */
+@media (max-width: 992px) {
+    .features-details-grid, .steps-grid-details { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .features-details-grid, .steps-grid-details { grid-template-columns: 1fr; }
+    .btns-flex-centered { flex-direction: column; align-items: center; }
 }

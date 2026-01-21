@@ -15,26 +15,59 @@
     <!-- الهيدر الموحد -->
     <header class="main-header">
         <div class="container navbar">
-            <div class="logo-area">
+            <div class="logo-area" onclick="location.href='index.html'" style="cursor:pointer">
                 <img src="images/logo.png" alt="Logo" class="nav-logo">
                 <div class="brand-text">
-                    <h1>إليزيه</h1>
-                    <span>لخدمات المباني</span>
+                    <h1 class="lang-ar">إليزيه</h1>
+                    <h1 class="lang-en">Elyzee</h1>
+                    <span class="lang-ar">لخدمات المباني</span>
+                    <span class="lang-en">Building Services</span>
                 </div>
             </div>
-              <nav id="nav-menu">
+            <nav id="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="index.html#home">الرئيسية</a></li>
-                    <li><a href="index.html#about">من نحن</a></li>
-                    <li><a href="index.html#marble">جلي الرخام</a></li>
-                    <li><a href="index.html#cleaning">التنظيف</a></li>
-                    <li><a href="index.html#decor">الديكور</a></li>
-                    <li><a href="index.html#maintenance">الصيانة</a></li>
+                    <li>
+                        <a href="index.html#home">
+                            <span class="lang-ar">الرئيسية</span>
+                            <span class="lang-en">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#about">
+                            <span class="lang-ar">من نحن</span>
+                            <span class="lang-en">About Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#marble">
+                            <span class="lang-ar">جلي الرخام</span>
+                            <span class="lang-en">Marble Polishing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#cleaning">
+                            <span class="lang-ar">التنظيف</span>
+                            <span class="lang-en">Cleaning</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#decor">
+                            <span class="lang-ar">الديكور</span>
+                            <span class="lang-en">Decor</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#maintenance">
+                            <span class="lang-ar">الصيانة</span>
+                            <span class="lang-en">Maintenance</span>
+                        </a>
+                    </li>
+
                     <li class="mobile-lang-item">
                         <button id="langSwitcher" class="lang-btn">
                             <i class="fas fa-globe"></i>
-                            English
-                        </button>
+                            <span id="langText">English</span>
+                            </a>
                     </li>
                 </ul>
             </nav>
@@ -46,95 +79,125 @@
     </header>
 
     <!-- الهيرو (واجهة الصفحة) -->
-    <section class="page-hero-inner decor-hero">
-        <div class="container hero-content">
-            <h1 class="animate-up" style="text-align: center;">عالم الديكور والجبس بورد</h1>
-            <p class="animate-up" style="text-align: center;">نبتكر حلولاً عصرية تجمع بين المرونة والجمال</p>
+    <section class="page-hero-inner decor-hero-bg">
+        <div class="hero-overlay-dark"></div>
+        <div class="container hero-content-inner">
+            <h1 class="lang-ar animate-up">عالم الديكور والجبس بورد</h1>
+            <h1 class="lang-en animate-up">Decor & Gypsum Board World</h1>
+            <p class="lang-ar animate-up">نبتكر حلولاً عصرية تجمع بين المرونة والجمال</p>
+            <p class="lang-en animate-up">Innovative modern solutions blending flexibility and beauty</p>
         </div>
     </section>
 
-    <!-- المحتوى الرئيسي بتنسيق احترافي -->
     <main class="container section-padding">
         <div class="article-layout-grid">
 
             <!-- الجانب الأيمن: المقال والخدمات -->
             <div class="article-main-side reveal">
-                <h2 class="gold-text mb-3">ما هو الجبس بورد ولماذا أصبح أساسياً؟</h2>
-                <p class="article-intro-text">يعتبر الجبس بورد مادة بناء عصرية تميزت بمرونتها وسهولة استخدامها. يتكون من
-                    ألواح جبسية مضغوطة توفر حلولاً مثالية للأسقف والجدران، مع ميزات العزل الصوتي والحراري الفائقة.</p>
+                <h2 class="gold-text mb-3 lang-ar">ما هو الجبس بورد ولماذا أصبح أساسياً؟</h2>
+                <h2 class="gold-text mb-3 lang-en">Why is Gypsum Board Essential?</h2>
+
+                <p class="article-intro-text lang-ar">يعتبر الجبس بورد مادة بناء عصرية تميزت بمرونتها وسهولة استخدامها.
+                    يتكون من ألواح جبسية مضغوطة توفر حلولاً مثالية للأسقف والجدران، مع ميزات العزل الصوتي والحراري
+                    الفائقة.</p>
+                <p class="article-intro-text lang-en">Gypsum board is a modern building material known for its
+                    flexibility and ease of use. It consists of pressed gypsum panels providing ideal solutions for
+                    ceilings and walls with superior acoustic and thermal insulation.</p>
 
                 <!-- شبكة المميزات الثلاثية -->
                 <div class="importance-mini-grid">
                     <div class="imp-card-mini">
                         <i class="fas fa-paint-brush"></i>
-                        <h4>جماليات فنية</h4>
-                        <p>إمكانية عمل أشكال هندسية معقدة وإضاءة مخفية.</p>
+                        <h4 class="lang-ar">جماليات فنية</h4>
+                        <h4 class="lang-en">Artistic Beauty</h4>
+                        <p class="lang-ar">إمكانية عمل أشكال هندسية معقدة وإضاءة مخفية.</p>
+                        <p class="lang-en">Creating complex shapes and hidden lighting.</p>
                     </div>
                     <div class="imp-card-mini">
                         <i class="fas fa-bolt"></i>
-                        <h4>سرعة التنفيذ</h4>
-                        <p>سهل التركيب ولا يسبب فوضى أو تأخير في الموقع.</p>
+                        <h4 class="lang-ar">سرعة التنفيذ</h4>
+                        <h4 class="lang-en">Fast Execution</h4>
+                        <p class="lang-ar">سهل التركيب ولا يسبب فوضى أو تأخير في الموقع.</p>
+                        <p class="lang-en">Easy to install without causing any mess or delays.</p>
                     </div>
                     <div class="imp-card-mini">
                         <i class="fas fa-wallet"></i>
-                        <h4>حلول اقتصادية</h4>
-                        <p>تكلفة مناسبة جداً مقارنة بالبناء التقليدي والخرسانة.</p>
+                        <h4 class="lang-ar">حلول اقتصادية</h4>
+                        <h4 class="lang-en">Cost Effective</h4>
+                        <p class="lang-ar">تكلفة مناسبة جداً مقارنة بالبناء التقليدي والخرسانة.</p>
+                        <p class="lang-en">Affordable cost compared to traditional construction.</p>
                     </div>
                 </div>
 
-                <h2 class="gold-text mt-5 mb-4">خدماتنا التخصصية في أعمال الديكور</h2>
+                <h2 class="gold-text mt-5 mb-4 lang-ar">خدماتنا التخصصية في أعمال الديكور</h2>
+                <h2 class="gold-text mt-5 mb-4 lang-en">Our Specialized Decor Services</h2>
+
                 <div class="numbered-services-list">
                     <div class="n-service-item">
                         <div class="n-number">01</div>
                         <div class="n-text">
-                            <h4>تصميم وتنفيذ الأسقف المعلقة متعددة المستويات.</h4>
+                            <p class="lang-ar">تصميم وتنفيذ الأسقف المعلقة متعددة المستويات.</p>
+                            <p class="lang-en">Design and execution of multi-level suspended ceilings.</p>
                         </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">02</div>
                         <div class="n-text">
-                            <h4>تقسيم المساحات الداخلية بجدران الجبس بورد الأنيقة.</h4>
+                            <p class="lang-ar">تقسيم المساحات الداخلية بجدران الجبس بورد الأنيقة.</p>
+                            <p class="lang-en">Dividing interior spaces with elegant gypsum board walls.</p>
                         </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">03</div>
                         <div class="n-text">
-                            <h4>تنفيذ ديكورات الصالونات النسائية والمراكز التجارية.</h4>
+                            <p class="lang-ar">تنفيذ ديكورات الصالونات النسائية والمراكز التجارية.</p>
+                            <p class="lang-en">Decoration of ladies' salons and commercial centers.</p>
                         </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">04</div>
                         <div class="n-text">
-                            <h4>تركيب بديل الخشب وبديل الرخام والخشب الشيبورد.</h4>
+                            <p class="lang-ar">تركيب بديل الخشب وبديل الرخام والخشب الشيبورد.</p>
+                            <p class="lang-en">Installing wood and marble alternatives and chipboard.</p>
                         </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">05</div>
                         <div class="n-text">
-                            <h4>تركيب أنظمة الإضاءة الحديثة (بروفايل ليد، ماجنتك لايت).</h4>
+                            <p class="lang-ar">تركيب أنظمة الإضاءة الحديثة (بروفايل ليد، ماجنتك لايت).</p>
+                            <p class="lang-en">Installing modern lighting (LED profile, Magnetic Light).</p>
                         </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">06</div>
                         <div class="n-text">
-                            <h4>أعمال الجبس المغربي والزخارف الجبسية التقليدية.</h4>
+                            <p class="lang-ar">أعمال الجبس المغربي والزخارف الجبسية التقليدية.</p>
+                            <p class="lang-en">Moroccan gypsum works and traditional decorations.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- الجانب الأيسر: السايد بار (صندوق التواصل) -->
+            <!-- الجانب الأيسر: السايد بار (Sticky Sidebar) -->
             <aside class="article-sidebar-side">
                 <div class="sticky-contact-card reveal">
                     <div class="inner-cta">
-                        <i class="fas fa-headset main-cta-icon"></i>
-                        <h3>تواصل معنا الآن</h3>
-                        <p>نحن متواجدون في أبو ظبي لخدمتكم على مدار الساعة.</p>
-                        <a href="https://wa.me/971566049805" class="btn-cta-sidebar"><i class="fab fa-whatsapp"></i>
-                            اطلب الخدمة</a>
+                        <i class="fas fa-pencil-ruler main-cta-icon"></i>
+                        <h3 class="lang-ar">صمم منزلك معنا</h3>
+                        <h3 class="lang-en">Design Your Home</h3>
+                        <p class="lang-ar">نقدم حلولاً إبداعية تناسب جميع الأذواق والميزانيات.</p>
+                        <p class="lang-en">Creative solutions for all tastes and budgets.</p>
+
+                        <a href="https://wa.me/971566049805" class="btn-wa-sidebar">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="lang-ar">تحدث مع المصمم</span>
+                            <span class="lang-en">Chat with Designer</span>
+                        </a>
+
                         <div class="sidebar-info-row">
-                            <span><i class="fas fa-phone-alt"></i> 0566049805</span><br>
-                            <span><i class="fas fa-map-marker-alt"></i> أبو ظبي</span>
+                            <span dir="ltr"><i class="fas fa-phone-alt"></i> 0566049805</span><br>
+                            <span><i class="fas fa-map-marker-alt"></i> <span class="lang-ar">أبو ظبي</span><span
+                                    class="lang-en">Abu Dhabi</span></span>
                         </div>
                     </div>
                 </div>
@@ -142,12 +205,17 @@
         </div>
     </main>
 
-    <!-- <footer class="main-footer-dark">
-        <div class="container footer-content">
-            <img src="logo.png" alt="Logo" class="footer-logo">
-            <p>&copy; 2026 جميع الحقوق محفوظة لشركة إليزيه لخدمات المباني</p>
-        </div>
-    </footer> -->
+
+
+    <!-- أزرار التواصل العائمة -->
+    <div class="floating-actions">
+        <a href="https://wa.me/971566049805" target="_blank" class="float-btn whatsapp" title="واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+971566049805" class="float-btn phone" title="اتصال">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>

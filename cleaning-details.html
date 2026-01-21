@@ -4,35 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة تنظيف منازل - تفاصيل الخدمة | إليزيه</title>
+    <title>خدمات التنظيف - تفاصيل الخدمة | إليزيه</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body class="details-page">
     <!-- الهيدر الموحد -->
     <header class="main-header">
         <div class="container navbar">
-            <div class="logo-area">
+            <div class="logo-area" onclick="location.href='index.html'" style="cursor:pointer">
                 <img src="images/logo.png" alt="Logo" class="nav-logo">
                 <div class="brand-text">
                     <h1 class="lang-ar">إليزيه</h1>
+                    <h1 class="lang-en">Elyzee</h1>
                     <span class="lang-ar">لخدمات المباني</span>
+                    <span class="lang-en">Building Services</span>
                 </div>
             </div>
-            <nav id="nav-menu">
+       <nav id="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="index.html#home">الرئيسية</a></li>
-                    <li><a href="index.html#about">من نحن</a></li>
-                    <li><a href="index.html#marble">جلي الرخام</a></li>
-                    <li><a href="index.html#cleaning">التنظيف</a></li>
-                    <li><a href="index.html#decor">الديكور</a></li>
-                    <li><a href="index.html#maintenance">الصيانة</a></li>
+                    <li>
+                        <a href="index.html#home">
+                            <span class="lang-ar">الرئيسية</span>
+                            <span class="lang-en">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#about">
+                            <span class="lang-ar">من نحن</span>
+                            <span class="lang-en">About Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#marble">
+                            <span class="lang-ar">جلي الرخام</span>
+                            <span class="lang-en">Marble Polishing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#cleaning">
+                            <span class="lang-ar">التنظيف</span>
+                            <span class="lang-en">Cleaning</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#decor">
+                            <span class="lang-ar">الديكور</span>
+                            <span class="lang-en">Decor</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#maintenance">
+                            <span class="lang-ar">الصيانة</span>
+                            <span class="lang-en">Maintenance</span>
+                        </a>
+                    </li>
+
                     <li class="mobile-lang-item">
                         <button id="langSwitcher" class="lang-btn">
                             <i class="fas fa-globe"></i>
-                            English
-                        </button>
+                            <span id="langText">English</span>
+                            </a>
                     </li>
                 </ul>
             </nav>
@@ -43,61 +77,83 @@
         </div>
     </header>
 
+    <!-- الهيرو الفرعي -->
     <section class="page-hero-inner cleaning-hero">
         <div class="container hero-content">
-            <h1 class="animate-up" style="text-align: center;">خدمات تنظيف المنازل والفلل</h1>
-            <p class="animate-up" style="text-align: center;">بيئة صحية، مريحة، ونظافة تليق بكم</p>
+            <h1 class="lang-ar animate-up">خدمات تنظيف المنازل والفلل</h1>
+            <h1 class="lang-en animate-up">Home & Villa Cleaning Services</h1>
+            <p class="lang-ar animate-up">بيئة صحية، مريحة، ونظافة تليق بكم</p>
+            <p class="lang-en animate-up">Healthy environment, comfort, and cleanliness that suits you</p>
         </div>
     </section>
 
     <main class="container section-padding">
-        <div class="article-layout">
+        <div class="article-layout-grid">
 
             <!-- الجانب الأيمن: المقال الرئيسي -->
-            <div class="main-article reveal">
-                <h2 class="gold-text mb-4">لماذا تعتبر شركة تنظيف المنازل ضرورة؟</h2>
-                <p class="article-intro">في عالمنا المعاصر، أصبح الحفاظ على نظافة المنزل أمرًا بالغ الأهمية. نوفر لك
-                    الجهد والوقت من خلال فريق محترف يضمن لك بيئة صحية وآمنة تماماً.</p>
+            <div class="article-main-side reveal">
+                <h2 class="gold-text mb-4 lang-ar">لماذا تعتبر شركة تنظيف المنازل ضرورة؟</h2>
+                <h2 class="gold-text mb-4 lang-en">Why is a Professional Cleaning Company Essential?</h2>
+                
+                <p class="article-intro-text lang-ar">في عالمنا المعاصر، أصبح الحفاظ على نظافة المنزل أمرًا بالغ الأهمية. نوفر لك الجهد والوقت من خلال فريق محترف يضمن لك بيئة صحية وآمنة تماماً لعائلتك.</p>
+                <p class="article-intro-text lang-en">In today's modern world, maintaining a clean home is vital. We save you time and effort through a professional team that ensures a healthy and safe environment for your family.</p>
 
-                <!-- شبكة الأهمية -->
-                <div class="importance-grid">
-                    <div class="imp-card">
-                        <div class="imp-num">1</div>
-                        <h4>بيئة صحية وآمنة</h4>
-                        <p>إزالة الأتربة والجراثيم التي تسبب الحساسية وأمراض التنفس.</p>
+                <!-- شبكة الأهمية 1,2,3 -->
+                <div class="importance-mini-grid">
+                    <div class="imp-card-mini">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h4 class="lang-ar">بيئة صحية</h4>
+                        <h4 class="lang-en">Healthy Environment</h4>
+                        <p class="lang-ar">إزالة الأتربة والجراثيم التي تسبب الحساسية.</p>
+                        <p class="lang-en">Removing dust and germs that cause allergies.</p>
                     </div>
-                    <div class="imp-card">
-                        <div class="imp-num">2</div>
-                        <h4>راحة البال</h4>
-                        <p>توفير وقتك وجهدك والتركيز على مهام حياتك اليومية الأخرى.</p>
+                    <div class="imp-card-mini">
+                        <i class="fas fa-smile-beam"></i>
+                        <h4 class="lang-ar">راحة البال</h4>
+                        <h4 class="lang-en">Peace of Mind</h4>
+                        <p class="lang-ar">توفير وقتك وجهدك للتركيز على حياتك.</p>
+                        <p class="lang-en">Saving your time to focus on your life.</p>
                     </div>
-                    <div class="imp-card">
-                        <div class="imp-num">3</div>
-                        <h4>زيادة عمر الأثاث</h4>
-                        <p>العناية الدورية بالمفروشات والأجهزة تمنع التآكل والتلف المبكر.</p>
+                    <div class="imp-card-mini">
+                        <i class="fas fa-couch"></i>
+                        <h4 class="lang-ar">حماية الأثاث</h4>
+                        <h4 class="lang-en">Furniture Protection</h4>
+                        <p class="lang-ar">العناية الدورية تمنع التآكل والتلف المبكر.</p>
+                        <p class="lang-en">Periodic care prevents early wear and damage.</p>
                     </div>
                 </div>
 
-                <h2 class="mt-5 mb-4 gold-text">خدماتنا الشاملة في التنظيف</h2>
-                <div class="detailed-services-list">
-                    <div class="service-bar-item">
-                        <i class="fas fa-home"></i>
-                        <p><strong>التنظيف الدوري:</strong> يشمل غرف النوم، المطابخ، والصالونات بانتظام.</p>
+                <h2 class="gold-text mt-5 mb-4 lang-ar">خدماتنا الشاملة في التنظيف</h2>
+                <h2 class="gold-text mt-5 mb-4 lang-en">Our Comprehensive Cleaning Services</h2>
+                
+                <div class="numbered-services-list">
+                    <div class="n-service-item">
+                        <div class="n-number">01</div>
+                        <div class="n-text">
+                            <p class="lang-ar"><strong>التنظيف الدوري:</strong> يشمل غرف النوم، المطابخ، والصالونات بانتظام.</p>
+                            <p class="lang-en"><strong>Regular Cleaning:</strong> Includes bedrooms, kitchens, and living rooms.</p>
+                        </div>
                     </div>
-                    <div class="service-bar-item">
-                        <i class="fas fa-broom"></i>
-                        <p><strong>التنظيف العميق:</strong> فحص دقيق للزوايا الصعبة وإزالة الدهون المتراكمة في المطابخ.
-                        </p>
+                    <div class="n-service-item">
+                        <div class="n-number">02</div>
+                        <div class="n-text">
+                            <p class="lang-ar"><strong>التنظيف العميق:</strong> فحص دقيق للزوايا الصعبة وإزالة الدهون المتراكمة.</p>
+                            <p class="lang-en"><strong>Deep Cleaning:</strong> Detailed inspection of hard corners and grease removal.</p>
+                        </div>
                     </div>
-                    <div class="service-bar-item">
-                        <i class="fas fa-building"></i>
-                        <p><strong>تنظيف ما بعد البناء:</strong> إزالة آثار الطلاء، الأسمنت، والغبار الإنشائي من المباني
-                            الجديدة.</p>
+                    <div class="n-service-item">
+                        <div class="n-number">03</div>
+                        <div class="n-text">
+                            <p class="lang-ar"><strong>تنظيف ما بعد البناء:</strong> إزالة آثار الطلاء والأسمنت والغبار الإنشائي.</p>
+                            <p class="lang-en"><strong>Post-Construction:</strong> Removing paint traces, cement, and construction dust.</p>
+                        </div>
                     </div>
-                    <div class="service-bar-item">
-                        <i class="fas fa-couch"></i>
-                        <p><strong>غسيل السجاد والمفروشات:</strong> استخدام تقنيات البخار المتطورة للحفاظ على جودة
-                            الأقمشة.</p>
+                    <div class="n-service-item">
+                        <div class="n-number">04</div>
+                        <div class="n-text">
+                            <p class="lang-ar"><strong>غسيل السجاد والمفروشات:</strong> تقنيات البخار المتطورة للحفاظ على الأقمشة.</p>
+                            <p class="lang-en"><strong>Carpet & Upholstery:</strong> Advanced steam technologies to preserve fabrics.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,21 +162,46 @@
             <aside class="article-sidebar-side">
                 <div class="sticky-contact-card reveal">
                     <div class="inner-cta">
-                        <i class="fas fa-headset main-cta-icon"></i>
-                        <h3>تواصل معنا الآن</h3>
-                        <p>نحن متواجدون في أبو ظبي لخدمتكم على مدار الساعة.</p>
-                        <a href="https://wa.me/971566049805" class="btn-cta-sidebar"><i class="fab fa-whatsapp"></i>
-                            اطلب الخدمة</a>
+                        <i class="fas fa-broom main-cta-icon"></i>
+                        <h3 class="lang-ar">اطلب الخدمة الآن</h3>
+                        <h3 class="lang-en">Book Service Now</h3>
+                        <p class="lang-ar">نحن متواجدون في أبو ظبي لخدمتكم على مدار الساعة.</p>
+                        <p class="lang-en">We are available in Abu Dhabi to serve you 24/7.</p>
+                        
+                        <a href="https://wa.me/971566049805" class="btn-cta-sidebar">
+                            <i class="fab fa-whatsapp"></i> 
+                            <span class="lang-ar">اطلب عبر واتساب</span>
+                            <span class="lang-en">Order via WhatsApp</span>
+                        </a>
+                        
                         <div class="sidebar-info-row">
-                            <span><i class="fas fa-phone-alt"></i> 0566049805</span><br>
-                            <span><i class="fas fa-map-marker-alt"></i> أبو ظبي</span>
+                            <span dir="ltr"><i class="fas fa-phone-alt"></i> 0566049805</span><br>
+                            <span><i class="fas fa-map-marker-alt"></i> <span class="lang-ar">أبو ظبي</span><span class="lang-en">Abu Dhabi</span></span>
                         </div>
                     </div>
                 </div>
             </aside>
         </div>
     </main>
+
+    <!-- <footer class="main-footer-dark">
+        <div class="container footer-content">
+            <img src="images/logo.png" alt="Logo" class="footer-logo">
+            <p class="lang-ar">&copy; 2026 جميع الحقوق محفوظة لشركة إليزيه لخدمات المباني</p>
+            <p class="lang-en">&copy; 2026 All Rights Reserved to Elyzee Building Services</p>
+        </div>
+    </footer> -->
+
+    <!-- أزرار التواصل العائمة -->
+    <div class="floating-actions">
+        <a href="https://wa.me/971566049805" target="_blank" class="float-btn whatsapp" title="واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+971566049805" class="float-btn phone" title="اتصال">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
     <script src="script.js"></script>
 </body>
-
 </html>

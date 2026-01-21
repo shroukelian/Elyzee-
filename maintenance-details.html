@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خدمات الصيانة العامة | إليزيه</title>
+    <title>خدمات الصيانة العامة | إليزيه لخدمات المباني</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -15,26 +15,59 @@
     <!-- الهيدر الموحد -->
     <header class="main-header">
         <div class="container navbar">
-            <div class="logo-area">
+            <div class="logo-area" onclick="location.href='index.html'" style="cursor:pointer">
                 <img src="images/logo.png" alt="Logo" class="nav-logo">
                 <div class="brand-text">
-                    <h1>إليزيه</h1>
-                    <span>لخدمات المباني</span>
+                    <h1 class="lang-ar">إليزيه</h1>
+                    <h1 class="lang-en">Elyzee</h1>
+                    <span class="lang-ar">لخدمات المباني</span>
+                    <span class="lang-en">Building Services</span>
                 </div>
             </div>
-           <nav id="nav-menu">
+            <nav id="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="index.html#home">الرئيسية</a></li>
-                    <li><a href="index.html#about">من نحن</a></li>
-                    <li><a href="index.html#marble">جلي الرخام</a></li>
-                    <li><a href="index.html#cleaning">التنظيف</a></li>
-                    <li><a href="index.html#decor">الديكور</a></li>
-                    <li><a href="index.html#maintenance">الصيانة</a></li>
+                    <li>
+                        <a href="index.html#home">
+                            <span class="lang-ar">الرئيسية</span>
+                            <span class="lang-en">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#about">
+                            <span class="lang-ar">من نحن</span>
+                            <span class="lang-en">About Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#marble">
+                            <span class="lang-ar">جلي الرخام</span>
+                            <span class="lang-en">Marble Polishing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#cleaning">
+                            <span class="lang-ar">التنظيف</span>
+                            <span class="lang-en">Cleaning</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#decor">
+                            <span class="lang-ar">الديكور</span>
+                            <span class="lang-en">Decor</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#maintenance">
+                            <span class="lang-ar">الصيانة</span>
+                            <span class="lang-en">Maintenance</span>
+                        </a>
+                    </li>
+
                     <li class="mobile-lang-item">
                         <button id="langSwitcher" class="lang-btn">
                             <i class="fas fa-globe"></i>
-                            English
-                        </button>
+                            <span id="langText">English</span>
+                            </a>
                     </li>
                 </ul>
             </nav>
@@ -45,12 +78,14 @@
         </div>
     </header>
 
-    <!-- الهيرو -->
-    <section class="page-hero-inner maintenance-hero">
-        <!-- <div class="hero-overlay"></div> -->
-        <div class="container hero-content">
-            <h1 class="animate-up" style="text-align: center;">الصيانة العامة للمنازل والفلل</h1>
-            <p class="animate-up" style="text-align: center;">أمان، كفاءة، وراحة بال تدوم طويلاً</p>
+    <!-- الهيرو (واجهة الصفحة) -->
+    <section class="page-hero-inner maintenance-hero-bg">
+        <div class="hero-overlay-dark"></div>
+        <div class="container hero-content-inner">
+            <h1 class="lang-ar animate-up">الصيانة العامة للمنازل والفلل</h1>
+            <h1 class="lang-en animate-up">General Home & Villa Maintenance</h1>
+            <p class="lang-ar animate-up">أمان، كفاءة، وراحة بال تدوم طويلاً</p>
+            <p class="lang-en animate-up">Safety, Efficiency, and Long-lasting Peace of Mind</p>
         </div>
     </section>
 
@@ -60,67 +95,98 @@
 
             <!-- الجانب الأيمن: المقال والخدمات -->
             <div class="article-main-side reveal">
-                <h2 class="gold-text mb-3">أهمية الصيانة الدورية لمنزلك</h2>
-                <p class="article-intro-text">تعتبر الصيانة العامة أحد الأعمدة الأساسية للحفاظ على البنية التحتية
-                    للمباني. نحن في إليزيه نوفر لك فريقاً متكاملاً يضمن سلامة الأنظمة الكهربائية والسباكة، مما يرفع من
-                    قيمة عقارك ويحميه من التدهور.</p>
+                <h2 class="gold-text mb-3 lang-ar">أهمية الصيانة الدورية لمنزلك</h2>
+                <h2 class="gold-text mb-3 lang-en">Importance of Periodic Home Maintenance</h2>
+
+                <p class="article-intro-text lang-ar">تعتبر الصيانة العامة أحد الأعمدة الأساسية للحفاظ على البنية
+                    التحتية للمباني. نحن في إليزيه نوفر لك فريقاً متكاملاً يضمن سلامة الأنظمة الكهربائية والسباكة، مما
+                    يرفع من قيمة عقارك ويحميه من التدهور.</p>
+                <p class="article-intro-text lang-en">General maintenance is a fundamental pillar for preserving
+                    building infrastructure. At Elyzee, we provide an integrated team that ensures the safety of
+                    electrical and plumbing systems, increasing your property value and protecting it from
+                    deterioration.</p>
 
                 <!-- شبكة المميزات الثلاثية -->
                 <div class="importance-mini-grid">
                     <div class="imp-card-mini">
                         <i class="fas fa-shield-alt"></i>
-                        <h4>السلامة والأمان</h4>
-                        <p>تجنب حرائق الكهرباء وانسداد الصرف الصحي المفاجئ.</p>
+                        <h4 class="lang-ar">السلامة والأمان</h4>
+                        <h4 class="lang-en">Safety & Security</h4>
+                        <p class="lang-ar">تجنب حرائق الكهرباء وانسداد الصرف المفاجئ.</p>
+                        <p class="lang-en">Avoid electrical fires and sudden drainage blocks.</p>
                     </div>
                     <div class="imp-card-mini">
                         <i class="fas fa-chart-line"></i>
-                        <h4>زيادة عمر الممتلكات</h4>
-                        <p>الحفاظ على جودة الأثاث والهيكل الإنشائي للمبنى.</p>
+                        <h4 class="lang-ar">زيادة عمر العقار</h4>
+                        <h4 class="lang-en">Increase Life Span</h4>
+                        <p class="lang-ar">الحفاظ على جودة الأثاث والهيكل الإنشائي.</p>
+                        <p class="lang-en">Preserving furniture quality and building structure.</p>
                     </div>
                     <div class="imp-card-mini">
                         <i class="fas fa-coins"></i>
-                        <h4>توفير التكاليف</h4>
-                        <p>اكتشاف المشكلات الصغيرة قبل أن تصبح باهظة الثمن.</p>
+                        <h4 class="lang-ar">توفير التكاليف</h4>
+                        <h4 class="lang-en">Cost Saving</h4>
+                        <p class="lang-ar">اكتشاف المشكلات الصغيرة قبل أن تتضخم.</p>
+                        <p class="lang-en">Detecting small issues before they become costly.</p>
                     </div>
                 </div>
 
-                <h2 class="gold-text mt-5 mb-4" style="margin: 30px;">ماذا نقدم في إليزيه للصيانة؟</h2>
+                <h2 class="gold-text mt-5 mb-4 lang-ar">ماذا نقدم في إليزيه للصيانة؟</h2>
+                <h2 class="gold-text mt-5 mb-4 lang-en">What do we provide in Elyzee Maintenance?</h2>
+
                 <div class="numbered-services-list">
                     <div class="n-service-item">
                         <div class="n-number">01</div>
                         <div class="n-text">
-                            <h4><strong>الصيانة الكهربائية:</strong> فحص الأسلاك، المفاتيح، الإضاءة، وأنظمة الحماية.
-                            </h4>
+                            <p class="lang-ar"><strong>الصيانة الكهربائية:</strong> فحص الأسلاك، المفاتيح، الإضاءة،
+                                وأنظمة الحماية.</p>
+                            <p class="lang-en"><strong>Electrical Maintenance:</strong> Wiring check, switches,
+                                lighting, and protection systems.</p>
                         </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">02</div>
                         <div class="n-text">
-                            <h4><strong>السباكة والأنابيب:</strong> كشف التسريبات، صيانة المحابس، وتنظيف المجاري.</h4>
+                            <p class="lang-ar"><strong>السباكة والأنابيب:</strong> كشف التسريبات، صيانة المحابس، وتنظيف
+                                المجاري.</p>
+                            <p class="lang-en"><strong>Plumbing & Piping:</strong> Leak detection, valve maintenance,
+                                and drain cleaning.</p>
                         </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">03</div>
                         <div class="n-text">
-                            <h4><strong>التكييف والتهوية:</strong> صيانة أنظمة التكييف وتنظيف الفلاتر وضبط الأداء.</h4>
+                            <p class="lang-ar"><strong>التكييف والتهوية:</strong> صيانة أنظمة التكييف وتنظيف الفلاتر
+                                وضبط الأداء.</p>
+                            <p class="lang-en"><strong>HVAC & Ventilation:</strong> AC system maintenance, filter
+                                cleaning, and performance tuning.</p>
                         </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">04</div>
                         <div class="n-text">
-                            <h4><strong>البنية التحتية:</strong> إصلاح التشققات، صيانة الأسطح، والأبواب والنوافذ.</h4>
+                            <p class="lang-ar"><strong>البنية التحتية:</strong> إصلاح التشققات، صيانة الأسطح، والأبواب
+                                والنوافذ.</p>
+                            <p class="lang-en"><strong>Infrastructure:</strong> Crack repair, roof maintenance, and
+                                doors/windows fix.</p>
                         </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">05</div>
                         <div class="n-text">
-                            <h4><strong>المسابح والحدائق:</strong> تنظيف المسابح، ضبط الكيماويات، وتهذيب الأشجار.</h4>
+                            <p class="lang-ar"><strong>المسابح والحدائق:</strong> تنظيف المسابح، ضبط الكيماويات، وتهذيب
+                                الأشجار.</p>
+                            <p class="lang-en"><strong>Pools & Gardens:</strong> Pool cleaning, chemical balancing, and
+                                tree trimming.</p>
                         </div>
                     </div>
                     <div class="n-service-item">
                         <div class="n-number">06</div>
                         <div class="n-text">
-                            <h4><strong>الأنظمة الأمنية:</strong> صيانة كاميرات المراقبة وأنظمة الإنذار ضد السرقة.</h4>
+                            <p class="lang-ar"><strong>الأنظمة الأمنية:</strong> صيانة كاميرات المراقبة وأنظمة الإنذار
+                                ضد السرقة.</p>
+                            <p class="lang-en"><strong>Security Systems:</strong> Maintenance of CCTV cameras and
+                                anti-theft alarms.</p>
                         </div>
                     </div>
                 </div>
@@ -130,14 +196,22 @@
             <aside class="article-sidebar-side">
                 <div class="sticky-contact-card reveal">
                     <div class="inner-cta">
-                        <i class="fas fa-headset main-cta-icon"></i>
-                        <h3>تواصل معنا الآن</h3>
-                        <p>نحن متواجدون في أبو ظبي لخدمتكم على مدار الساعة.</p>
-                        <a href="https://wa.me/971566049805" class="btn-cta-sidebar"><i class="fab fa-whatsapp"></i>
-                            اطلب الخدمة</a>
+                        <i class="fas fa-tools main-cta-icon"></i>
+                        <h3 class="lang-ar">تواصل معنا الآن</h3>
+                        <h3 class="lang-en">Contact Us Now</h3>
+                        <p class="lang-ar">نحن متواجدون في أبو ظبي لخدمتكم على مدار الساعة.</p>
+                        <p class="lang-en">We are available in Abu Dhabi to serve you 24/7.</p>
+
+                        <a href="https://wa.me/971566049805" class="btn-wa-sidebar">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="lang-ar">اطلب فني متخصص</span>
+                            <span class="lang-en">Request a Technician</span>
+                        </a>
+
                         <div class="sidebar-info-row">
-                            <span><i class="fas fa-phone-alt"></i> 0566049805</span><br>
-                            <span><i class="fas fa-map-marker-alt"></i> أبو ظبي</span>
+                            <span dir="ltr"><i class="fas fa-phone-alt"></i> 0566049805</span><br>
+                            <span><i class="fas fa-map-marker-alt"></i> <span class="lang-ar">أبو ظبي</span><span
+                                    class="lang-en">Abu Dhabi</span></span>
                         </div>
                     </div>
                 </div>
@@ -145,13 +219,17 @@
         </div>
     </main>
 
-    <!-- الفوتر -->
-    <!-- <footer class="main-footer-dark">
-        <div class="container footer-content">
-            <img src="logo.png" alt="Logo" class="footer-logo">
-            <p>&copy; 2026 جميع الحقوق محفوظة لشركة إليزيه لخدمات المباني</p>
-        </div>
-    </footer> -->
+
+
+    <!-- أزرار التواصل العائمة -->
+    <div class="floating-actions">
+        <a href="https://wa.me/971566049805" target="_blank" class="float-btn whatsapp" title="واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+971566049805" class="float-btn phone" title="اتصال">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>

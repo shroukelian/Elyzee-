@@ -12,29 +12,62 @@
 
 <body class="details-page">
 
-    <!-- الهيدر -->
+    <!-- الهيدر الموحد -->
     <header class="main-header">
         <div class="container navbar">
-            <div class="logo-area">
+            <div class="logo-area" onclick="location.href='index.html'" style="cursor:pointer">
                 <img src="images/logo.png" alt="Logo" class="nav-logo">
                 <div class="brand-text">
                     <h1 class="lang-ar">إليزيه</h1>
+                    <h1 class="lang-en">Elyzee</h1>
                     <span class="lang-ar">لخدمات المباني</span>
+                    <span class="lang-en">Building Services</span>
                 </div>
             </div>
-            <nav id="nav-menu">
+       <nav id="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="index.html#home">الرئيسية</a></li>
-                    <li><a href="index.html#about">من نحن</a></li>
-                    <li><a href="index.html#marble">جلي الرخام</a></li>
-                    <li><a href="index.html#cleaning">التنظيف</a></li>
-                    <li><a href="index.html#decor">الديكور</a></li>
-                    <li><a href="index.html#maintenance">الصيانة</a></li>
+                    <li>
+                        <a href="index.html#home">
+                            <span class="lang-ar">الرئيسية</span>
+                            <span class="lang-en">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#about">
+                            <span class="lang-ar">من نحن</span>
+                            <span class="lang-en">About Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#marble">
+                            <span class="lang-ar">جلي الرخام</span>
+                            <span class="lang-en">Marble Polishing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#cleaning">
+                            <span class="lang-ar">التنظيف</span>
+                            <span class="lang-en">Cleaning</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#decor">
+                            <span class="lang-ar">الديكور</span>
+                            <span class="lang-en">Decor</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#maintenance">
+                            <span class="lang-ar">الصيانة</span>
+                            <span class="lang-en">Maintenance</span>
+                        </a>
+                    </li>
+
                     <li class="mobile-lang-item">
                         <button id="langSwitcher" class="lang-btn">
                             <i class="fas fa-globe"></i>
-                            English
-                        </button>
+                            <span id="langText">English</span>
+                            </a>
                     </li>
                 </ul>
             </nav>
@@ -46,103 +79,133 @@
     </header>
 
     <!-- الهيرو (واجهة الصفحة) -->
-    <section class="page-hero-inner">
-        <!-- <div class="hero-overlay"></div> -->
-        <div class="container hero-content">
-            <h1 class="animate-up" style="text-align: center;">جلي وتلميع الرخام</h1>
-            <p class="animate-up" style="text-align: center;">نستعيد فخامة أرضياتكم بأحدث التقنيات</p>
+    <section class="page-hero-inner marble-hero-bg">
+        <div class="hero-overlay-dark"></div>
+        <div class="container hero-content-inner text-center">
+            <h1 class="lang-ar animate-up">جلي وتلميع الرخام</h1>
+            <h1 class="lang-en animate-up">Marble Grinding & Polishing</h1>
+            <p class="lang-ar animate-up">نستعيد فخامة أرضياتكم بأحدث التقنيات العالمية</p>
+            <p class="lang-en animate-up">Restoring your floors' luxury with latest global technologies</p>
         </div>
     </section>
 
     <!-- المحتوى الرئيسي -->
-    <main class="container">
-
+    <main class="container section-padding">
+        
         <!-- مقدمة القسم -->
-        <div class="section-spacing text-center reveal" style="margin: 35px;">
-            <h2 class="gold-text" style="text-align: center;">استعادة جمال الرخام الطبيعي</h2>
-            <p class="section-desc">تُعد الأرضيات الرخامية من أفخم الأنواع التي تضفي لمسة من الرقي، ولكنها تتأثر بالزمن.
-                خدماتنا تضمن لك استعادة رونقها الأصلي من خلال معالجة الخدوش والتلميع بالكريستال.</p>
+        <div class="intro-box-centered text-center reveal">
+            <h2 class="gold-text lang-ar">استعادة جمال الرخام الطبيعي</h2>
+            <h2 class="gold-text lang-en">Restoring Natural Marble Beauty</h2>
+            
+            <p class="lang-ar">تُعد الأرضيات الرخامية من أفخم الأنواع التي تضفي لمسة من الرقي، ولكنها تتأثر بالزمن. خدماتنا تضمن لك استعادة رونقها الأصلي من خلال معالجة الخدوش والتلميع بالكريستال.</p>
+            <p class="lang-en">Marble floors are among the most luxurious types that add a touch of sophistication, but they are affected by time. Our services guarantee restoring their original luster through scratch treatment and crystal polishing.</p>
         </div>
 
-        <!-- المميزات (4 كروت بجانب بعض) -->
-        <div class="section-spacing reveal">
-            <h3 class="text-center section-subtitle" style="text-align: center;">لماذا يجب عليك اختيار خدماتنا؟</h3>
+        <!-- المميزات (4 كروت) -->
+        <div class="features-details-section reveal">
+            <h3 class="text-center section-subtitle">
+                <span class="lang-ar">لماذا يجب عليك اختيار خدماتنا؟</span>
+                <span class="lang-en">Why Choose Our Services?</span>
+            </h3>
             <div class="features-details-grid">
                 <div class="f-detail-card">
                     <i class="fas fa-sparkles"></i>
-                    <h4>استعادة اللمعان</h4>
-                    <p>إعادة البريق الأصلي للرخام ليبدو كالمراآة تماماً.</p>
+                    <h4 class="lang-ar">استعادة اللمعان</h4><h4 class="lang-en">Restore Shine</h4>
+                    <p class="lang-ar">إعادة البريق الأصلي للرخام ليبدو كالمراآة تماماً.</p>
+                    <p class="lang-en">Returning the original brilliance to make it look like a mirror.</p>
                 </div>
                 <div class="f-detail-card">
                     <i class="fas fa-layer-group"></i>
-                    <h4>إزالة الخدوش</h4>
-                    <p>التخلص من كافة الندوب والبقع الناتجة عن الاستخدام.</p>
+                    <h4 class="lang-ar">إزالة الخدوش</h4><h4 class="lang-en">Remove Scratches</h4>
+                    <p class="lang-ar">التخلص من كافة الندوب والبقع الناتجة عن الاستخدام.</p>
+                    <p class="lang-en">Eliminating all scars and stains resulting from usage.</p>
                 </div>
                 <div class="f-detail-card">
                     <i class="fas fa-shield-virus"></i>
-                    <h4>حماية المسام</h4>
-                    <p>عزل الرخام بطبقة واقية تمنع امتصاص السوائل.</p>
+                    <h4 class="lang-ar">حماية المسام</h4><h4 class="lang-en">Pore Protection</h4>
+                    <p class="lang-ar">عزل الرخام بطبقة واقية تمنع امتصاص السوائل.</p>
+                    <p class="lang-en">Isolating marble with a protective layer to prevent absorption.</p>
                 </div>
                 <div class="f-detail-card">
                     <i class="fas fa-heart"></i>
-                    <h4>إطالة العمر</h4>
-                    <p>حماية الرخام من التآكل ليحافظ على جماله لسنوات.</p>
+                    <h4 class="lang-ar">إطالة العمر</h4><h4 class="lang-en">Extend Lifespan</h4>
+                    <p class="lang-ar">حماية الرخام من التآكل ليحافظ على جماله لسنوات.</p>
+                    <p class="lang-en">Protecting marble from erosion to keep its beauty for years.</p>
                 </div>
             </div>
         </div>
 
         <!-- خطوات العمل -->
-        <div class="section-spacing reveal">
-            <h3 class="text-center section-subtitle" style="text-align: center;">كيفية عمل جلي وتلميع الرخام</h3>
+        <div class="steps-section-details reveal">
+            <h3 class="text-center section-subtitle">
+                <span class="lang-ar">كيفية عمل جلي وتلميع الرخام</span>
+                <span class="lang-en">How Marble Polishing Works</span>
+            </h3>
             <div class="steps-grid-details">
                 <div class="step-card">
                     <div class="step-circle">1</div>
-                    <h4>التنظيف المبدئي</h4>
-                    <p>إزالة الأتربة والشوائب</p>
+                    <h4 class="lang-ar">التنظيف المبدئي</h4><h4 class="lang-en">Initial Cleaning</h4>
+                    <p class="lang-ar">إزالة الأتربة والشوائب</p><p class="lang-en">Removing dust and debris</p>
                 </div>
                 <div class="step-card">
                     <div class="step-circle">2</div>
-                    <h4>الجلي والتنعيم</h4>
-                    <p>بأقراص الماس المتخصصة</p>
+                    <h4 class="lang-ar">الجلي والتنعيم</h4><h4 class="lang-en">Grinding</h4>
+                    <p class="lang-ar">بأقراص الماس المتخصصة</p><p class="lang-en">Using specialized diamond discs</p>
                 </div>
                 <div class="step-card">
                     <div class="step-circle">3</div>
-                    <h4>التلميع النهائي</h4>
-                    <p>بالكريستال والمواد الخاصة</p>
+                    <h4 class="lang-ar">التلميع النهائي</h4><h4 class="lang-en">Final Polishing</h4>
+                    <p class="lang-ar">بالكريستال والمواد الخاصة</p><p class="lang-en">With crystals and special materials</p>
                 </div>
                 <div class="step-card">
                     <div class="step-circle">4</div>
-                    <h4>الحماية من البقع</h4>
-                    <p>طبقة عازلة نهائية</p>
+                    <h4 class="lang-ar">الحماية من البقع</h4><h4 class="lang-en">Stain Protection</h4>
+                    <p class="lang-ar">طبقة عازلة نهائية</p><p class="lang-en">Final protective coating</p>
                 </div>
             </div>
         </div>
 
         <!-- صندوق النصائح -->
-        <div class="section-spacing reveal" style="margin: 40px;">
+        <div class="tips-container-centered reveal" style="margin: 30px;">
             <div class="tips-box">
-                <h3><i class="fas fa-lightbulb"></i> نصائح للحفاظ على الرخام</h3>
-                <ul>
+                <h3 class="lang-ar"><i class="fas fa-lightbulb"></i> نصائح للحفاظ على الرخام</h3>
+                <h3 class="lang-en"><i class="fas fa-lightbulb"></i> Tips for Maintaining Marble</h3>
+                <ul class="lang-ar">
                     <li>التنظيف الدوري بمواد ناعمة وغير كاشطة.</li>
                     <li>تجنب سكب المواد الحمضية (الليمون والخل) نهائياً.</li>
                     <li>عمل صيانة دورية (تلميع خفيف) كل 6 أشهر.</li>
+                </ul>
+                <ul class="lang-en">
+                    <li>Regular cleaning with soft, non-abrasive materials.</li>
+                    <li>Avoid pouring acidic materials (lemon and vinegar) completely.</li>
+                    <li>Perform periodic maintenance (light polishing) every 6 months.</li>
                 </ul>
             </div>
         </div>
 
         <!-- أزرار التواصل -->
-        <div class="section-spacing text-center reveal" style="margin: 30px;">
-            <p class="cta-text" style="text-align: center;">هل ترغب في تجديد مظهر رخامك الآن؟</p>
-            <div class="btns-flex">
-                <a href="https://wa.me/971566049805" class="btn-gold"><i class="fab fa-whatsapp"></i> تواصل معنا
-                    واتساب</a>
-                <a href="tel:0566049805" class="btn-outline-blue">اتصل بنا الآن</a>
+        <div class="cta-bottom-area text-center reveal">
+            <p class="lang-ar" style="text-align: center;">هل ترغب في تجديد مظهر رخامك الآن؟</p>
+            <p class="lang-en"style="text-align: center;">Do you want to renew your marble look now?</p>
+            <div class="btns-flex-centered">
+                <a href="https://wa.me/971566049805" class="btn-gold"><i class="fab fa-whatsapp"></i> <span class="lang-ar">تواصل معنا واتساب</span><span class="lang-en">Contact us on WhatsApp</span></a>
+                <a href="tel:0566049805" class="btn-outline-maroon"><span class="lang-ar">اتصل بنا الآن</span><span class="lang-en">Call us now</span></a>
             </div>
         </div>
     </main>
 
 
+
+    <!-- الأزرار العائمة -->
+    <div class="floating-actions">
+        <a href="https://wa.me/971566049805" target="_blank" class="float-btn whatsapp" title="واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+971566049805" class="float-btn phone" title="اتصال">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
     <script src="script.js"></script>
 </body>
-
 </html>

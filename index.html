@@ -15,36 +15,66 @@
 </head>
 
 <body>
-
     <header class="main-header">
         <div class="container navbar">
-            <div class="logo-area">
+            <div class="logo-area" onclick="location.href='index.html'" style="cursor:pointer">
                 <img src="images/logo.png" alt="Logo" class="nav-logo">
                 <div class="brand-text">
-                    <h1>إليزيه</h1>
+                    <h1 class="lang-ar">إليزيه</h1>
+                    <h1 class="lang-en">Elyzee</h1>
                     <span class="lang-ar">لخدمات المباني</span>
+                    <span class="lang-en">Building Services</span>
                 </div>
             </div>
 
-            <!-- القائمة الجانبية -->
             <nav id="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="#home">الرئيسية</a></li>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#marble">جلي الرخام</a></li>
-                    <li><a href="#cleaning">التنظيف</a></li>
-                    <li><a href="#decor">الديكور</a></li>
-                    <li><a href="#maintenance">الصيانة</a></li>
+                    <li>
+                        <a href="#home">
+                            <span class="lang-ar">الرئيسية</span>
+                            <span class="lang-en">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <span class="lang-ar">من نحن</span>
+                            <span class="lang-en">About Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#marble">
+                            <span class="lang-ar">جلي الرخام</span>
+                            <span class="lang-en">Marble Polishing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#cleaning">
+                            <span class="lang-ar">التنظيف</span>
+                            <span class="lang-en">Cleaning</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#decor">
+                            <span class="lang-ar">الديكور</span>
+                            <span class="lang-en">Decor</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#maintenance">
+                            <span class="lang-ar">الصيانة</span>
+                            <span class="lang-en">Maintenance</span>
+                        </a>
+                    </li>
+
                     <li class="mobile-lang-item">
                         <button id="langSwitcher" class="lang-btn">
                             <i class="fas fa-globe"></i>
-                            English
-                        </button>
+                            <span id="langText">English</span>
+                            </a>
                     </li>
                 </ul>
             </nav>
 
-            <!-- أيقونة التلات شرطات -->
             <div class="menu-toggle" id="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
@@ -61,9 +91,9 @@
             <p class="animate-up delay-1 lang-ar">حلول متكاملة لجلي الرخام، التنظيف العميق، وأرقى أعمال الديكور.</p>
             <p class="animate-up delay-1 lang-en">Integrated solutions for marble polishing, deep cleaning, and fine
                 decor.</p>
-            <div class="hero-btns animate-up delay-2">
-                <a href="https://wa.me/966XXXXXXXXX" class="btn-gold pulse lang-ar">احجز موعداً الآن</a>
-                <a href="https://wa.me/966XXXXXXXXX" class="btn-gold pulse lang-en">Book Now</a>
+            <div class="hero-btns animate-up delay-2" style="margin-top: 20px;">
+                <a href="https://wa.me/971566049805" class="btn-gold pulse lang-ar">احجز موعداً الآن</a>
+                <a href="https://wa.me/971566049805" class="btn-gold pulse lang-en">Book Now</a>
             </div>
         </div>
     </section>
@@ -73,34 +103,60 @@
         <div class="about-main-flex">
             <!-- جهة النص -->
             <div class="about-text-side reveal">
-                <h4 class="gold-text">قصة إبداعنا</h4>
-                <h2 class="section-title">من هي <span class="maroon-text">إليزيه</span> لخدمات المباني؟</h2>
-                <p class="about-p">
+                <!-- العناوين -->
+                <h4 class="gold-text lang-ar">قصة إبداعنا</h4>
+                <h4 class="gold-text lang-en">Our Creative Story</h4>
+
+                <h2 class="section-title lang-ar">من هي <span class="maroon-text">إليزيه</span> لخدمات المباني؟</h2>
+                <h2 class="section-title lang-en">Who is <span class="maroon-text">Elyzee</span> Building Services?</h2>
+
+                <!-- الفقرة الرئيسية -->
+                <p class="about-p lang-ar">
                     نحن مؤسسة رائدة متخصصة في العناية الشاملة بالمباني، انطلقنا برؤية تهدف إلى دمج الجودة الفنية
                     بالفخامة العصرية. في <strong>إليزيه</strong>، لا نقدم مجرد خدمات صيانة، بل نصنع فارقاً ملموساً في
                     جمالية وعمر عقاراتكم الافتراضي.
                 </p>
+                <p class="about-p lang-en">
+                    We are a leading establishment specialized in comprehensive building care, launched with a vision to
+                    blend artistic quality with modern luxury. At <strong>Elyzee</strong>, we don't just provide
+                    maintenance; we make a tangible difference in the aesthetics and lifespan of your properties.
+                </p>
 
+                <!-- المميزات -->
                 <div class="about-features">
+                    <!-- الميزة 1 -->
                     <div class="af-item">
                         <i class="fas fa-gem"></i>
                         <div>
-                            <h4>دقة التخصص</h4>
-                            <p>نمتلك أحدث تقنيات جلي الرخام الإيطالية لضمان بريق الكريستال.</p>
+                            <h4 class="lang-ar">دقة التخصص</h4>
+                            <h4 class="lang-en">Precision Specialization</h4>
+                            <p class="lang-ar">نمتلك أحدث تقنيات جلي الرخام الإيطالية لضمان بريق الكريستال.</p>
+                            <p class="lang-en">We possess the latest Italian marble polishing technologies to ensure a
+                                crystal shine.</p>
                         </div>
                     </div>
+                    <!-- الميزة 2 -->
                     <div class="af-item">
                         <i class="fas fa-users-cog"></i>
                         <div>
-                            <h4>فريق احترافي</h4>
-                            <p>كوادر مدربة على أعلى مستوى في التنظيف العميق والصيانة والديكور.</p>
+                            <h4 class="lang-ar">فريق احترافي</h4>
+                            <h4 class="lang-en">Professional Team</h4>
+                            <p class="lang-ar">كوادر مدربة على أعلى مستوى في التنظيف العميق والصيانة والديكور.</p>
+                            <p class="lang-en">Highly trained staff in deep cleaning, maintenance, and decor.</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- الأزرار -->
                 <div class="about-action mt-4">
-                    <a href="#marble" class="btn-gold-fill">استكشف خدماتنا</a>
-                    <a href="tel:0566049805" class="btn-outline-maroon">اتصل بنا مباشرة</a>
+                    <a href="#marble" class="btn-gold-fill">
+                        <span class="lang-ar">استكشف خدماتنا</span>
+                        <span class="lang-en">Explore Services</span>
+                    </a>
+                    <a href="tel:0566049805" class="btn-outline-maroon">
+                        <span class="lang-ar">اتصل بنا مباشرة</span>
+                        <span class="lang-en">Call Us Directly</span>
+                    </a>
                 </div>
             </div>
 
@@ -108,8 +164,11 @@
             <div class="about-img-side reveal">
                 <div class="img-frame">
                     <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800"
-                        alt="إليزيه لخدمات المباني">
-                    <div class="experience-tag">خبرة +10 سنوات</div>
+                        alt="Elyzee Services">
+                    <div class="experience-tag">
+                        <span class="lang-ar">خبرة +10 سنوات</span>
+                        <span class="lang-en">+10 Years Experience</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,31 +176,62 @@
     <!-- قسم جلي الرخام المطور -->
     <section id="marble" class="section-padding container">
         <div class="marble-main-grid">
+            <!-- جهة النص -->
             <div class="marble-text-content reveal">
-                <h4 class="gold-text">خدماتنا المتميزة</h4>
-                <h2 class="section-title">جلي وتلميع الرخام</h2>
-                <p>استعد جمال ورونق أرضياتك الرخامية من خلال خدماتنا الاحترافية. نحن لا نقوم بالتنظيف فقط، بل نعيد إحياء
-                    الرخام ليعود كما كان يومه الأول.</p>
+                <h4 class="gold-text">
+                    <span class="lang-ar">خدماتنا المتميزة</span>
+                    <span class="lang-en">Our Distinguished Services</span>
+                </h4>
+                <h2 class="section-title">
+                    <span class="lang-ar">جلي وتلميع الرخام</span>
+                    <span class="lang-en">Marble Grinding & Polishing</span>
+                </h2>
+
+                <p class="lang-ar">
+                    استعد جمال ورونق أرضياتك الرخامية من خلال خدماتنا الاحترافية. نحن لا نقوم بالتنظيف فقط، بل نعيد
+                    إحياء الرخام ليعود كما كان يومه الأول.
+                </p>
+                <p class="lang-en">
+                    Restore the beauty and luster of your marble floors through our professional services. We don't just
+                    clean; we revive the marble to return to its original state.
+                </p>
 
                 <div class="mini-features">
-                    <div class="f-item"><i class="fas fa-check-circle"></i> <span>استعادة اللمعان والبريق
-                            بالكريستال</span></div>
-                    <div class="f-item"><i class="fas fa-check-circle"></i> <span>إزالة الخدوش والعيوب والترميم</span>
+                    <div class="f-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="lang-ar">استعادة اللمعان والبريق بالكريستال</span>
+                        <span class="lang-en">Restoring shine and luster with crystal</span>
                     </div>
-                    <div class="f-item"><i class="fas fa-check-circle"></i> <span>حماية المسام من السوائل والبقع</span>
+                    <div class="f-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="lang-ar">إزالة الخدوش والعيوب والترميم</span>
+                        <span class="lang-en">Removing scratches, defects, and restoration</span>
+                    </div>
+                    <div class="f-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="lang-ar">حماية المسام من السوائل والبقع</span>
+                        <span class="lang-en">Protecting pores from liquids and stains</span>
                     </div>
                 </div>
 
                 <div class="action-btns">
-                    <a href="marble-details.html" class="btn-outline">عرض كافة التفاصيل</a>
-                    <a href="https://wa.me/971566049805" class="btn-gold">اطلب الخدمة الآن</a>
+                    <a href="marble-details.html" class="btn-outline">
+                        <span class="lang-ar">عرض كافة التفاصيل</span>
+                        <span class="lang-en">View All Details</span>
+                    </a>
+                    <a href="https://wa.me/971566049805" class="btn-gold">
+                        <span class="lang-ar">اطلب الخدمة الآن</span>
+                        <span class="lang-en">Order Service Now</span>
+                    </a>
                 </div>
             </div>
+
+            <!-- جهة الصورة -->
             <div class="marble-images reveal">
                 <div class="main-img-wrapper">
                     <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800"
                         alt="Marble Work">
-                    <!-- <div class="experience-tag">خبرة +10 سنوات</div> -->
+
                 </div>
             </div>
         </div>
@@ -150,29 +240,51 @@
     <!-- قسم خدمات التنظيف المطور -->
     <section id="cleaning" class="section-padding bg-light">
         <div class="container">
+            <!-- عنوان القسم -->
             <div class="section-header text-center reveal">
-                <h2 class="section-title">خدمات التنظيف الاحترافية</h2>
-                <p>حلول تنظيف شاملة للمنازل والفلل والبنايات</p>
+                <h2 class="section-title">
+                    <span class="lang-ar">خدمات التنظيف الاحترافية</span>
+                    <span class="lang-en">Professional Cleaning Services</span>
+                </h2>
+                <p>
+                    <span class="lang-ar">حلول تنظيف شاملة للمنازل والفلل والبنايات</span>
+                    <span class="lang-en">Comprehensive cleaning solutions for homes, villas, and buildings</span>
+                </p>
             </div>
 
             <div class="cleaning-grid">
                 <!-- كارت تنظيف عميق -->
                 <div class="clean-pro-card reveal">
                     <div class="cp-icon"><i class="fas fa-shining"></i><i class="fas fa-broom"></i></div>
-                    <h3>التنظيف العميق</h3>
-                    <p>تنظيف شامل للفلل والمباني الجديدة، تعقيم الحمامات والمطابخ بأحدث المواد المعتمدة.</p>
+                    <h3>
+                        <span class="lang-ar">التنظيف العميق</span>
+                        <span class="lang-en">Deep Cleaning</span>
+                    </h3>
+                    <p class="lang-ar">تنظيف شامل للفلل والمباني الجديدة، تعقيم الحمامات والمطابخ بأحدث المواد المعتمدة.
+                    </p>
+                    <p class="lang-en">Comprehensive cleaning for villas and new buildings, sanitizing bathrooms and
+                        kitchens with the latest certified materials.</p>
+
                     <a href="cleaning-details.html" class="btn-clean-outline">
-                        اقرأ المقال الكامل <i class="fas fa-arrow-left"></i>
+                        <span class="lang-ar">اقرأ المقال الكامل <i class="fas fa-arrow-left"></i></span>
+                        <span class="lang-en">Read Full Article <i class="fas fa-arrow-right"></i></span>
                     </a>
                 </div>
 
                 <!-- كارت عاملات بالساعة -->
                 <div class="clean-pro-card reveal">
                     <div class="cp-icon"><i class="fas fa-clock"></i></div>
-                    <h3>عاملات بالساعة</h3>
-                    <p>نوفر عاملات نظافة بنظام الساعة أو العقود الشهرية بمرونة عالية تضمن راحتكم.</p>
+                    <h3>
+                        <span class="lang-ar">عاملات بالساعة</span>
+                        <span class="lang-en">Hourly Cleaners</span>
+                    </h3>
+                    <p class="lang-ar">نوفر عاملات نظافة بنظام الساعة أو العقود الشهرية بمرونة عالية تضمن راحتكم.</p>
+                    <p class="lang-en">We provide cleaning staff on an hourly basis or monthly contracts with high
+                        flexibility to ensure your comfort.</p>
+
                     <a href="https://wa.me/971566049805" class="btn-clean-solid" target="_blank">
-                        احجز الآن <i class="fab fa-whatsapp"></i>
+                        <span class="lang-ar">احجز الآن <i class="fab fa-whatsapp"></i></span>
+                        <span class="lang-en">Book Now <i class="fab fa-whatsapp"></i></span>
                     </a>
                 </div>
             </div>
@@ -185,30 +297,65 @@
             <!-- جهة الصور -->
             <div class="decor-images reveal">
                 <div class="main-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=1000"
-                        alt="ديكور جبس بورد" class="img-fluid">
-                    <div class="floating-badge">تصاميم 2026</div>
+                    <img src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=1000" alt="Decor"
+                        class="img-fluid">
+                    <div class="floating-badge">
+                        <span class="lang-ar">تصاميم 2026</span>
+                        <span class="lang-en">2026 Designs</span>
+                    </div>
                 </div>
             </div>
 
             <!-- جهة النص -->
             <div class="decor-text-content reveal">
-                <h4 class="gold-text">لمسات إبداعية</h4>
-                <h2 class="section-title">الديكور والجبس بورد</h2>
-                <p>نحول مساحاتك الداخلية إلى لوحات فنية أنيقة. متخصصون في تركيب الجبس بورد، الأسقف المعلقة، وتصاميم
-                    الإضاءة الحديثة التي تضفي لمسة من الفخامة على منزلك أو مكتبك.</p>
+                <h4 class="gold-text">
+                    <span class="lang-ar">لمسات إبداعية</span>
+                    <span class="lang-en">Creative Touches</span>
+                </h4>
+                <h2 class="section-title">
+                    <span class="lang-ar">الديكور والجبس بورد</span>
+                    <span class="lang-en">Decor & Gypsum Board</span>
+                </h2>
 
+                <p class="lang-ar">نحول مساحاتك الداخلية إلى لوحات فنية أنيقة. متخصصون في تركيب الجبس بورد، الأسقف
+                    المعلقة، وتصاميم الإضاءة الحديثة التي تضفي لمسة من الفخامة على منزلك أو مكتبك.</p>
+                <p class="lang-en">We transform your interior spaces into elegant artistic masterpieces. Specialists in
+                    gypsum board installation, suspended ceilings, and modern lighting designs that add a touch of
+                    luxury to your home or office.</p>
+
+                <!-- شبكة المميزات المصغرة -->
                 <div class="mini-features-grid">
-                    <div class="mf-item"><i class="fas fa-border-all"></i> <span>جبس بورد وأسقف معلقة</span></div>
-                    <div class="mf-item"><i class="fas fa-lightbulb"></i> <span>إضاءة مخفية وبروفايل ليد</span></div>
-                    <div class="mf-item"><i class="fas fa-couch"></i> <span>بديل الرخام والخشب</span></div>
-                    <div class="mf-item"><i class="fas fa-gem"></i> <span>ديكورات صالونات نسائية</span></div>
+                    <div class="mf-item">
+                        <i class="fas fa-border-all"></i>
+                        <span class="lang-ar">جبس بورد وأسقف معلقة</span>
+                        <span class="lang-en">Gypsum & Suspended Ceilings</span>
+                    </div>
+                    <div class="mf-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span class="lang-ar">إضاءة مخفية وبروفايل ليد</span>
+                        <span class="lang-en">LED Profiles & Lighting</span>
+                    </div>
+                    <div class="mf-item">
+                        <i class="fas fa-couch"></i>
+                        <span class="lang-ar">بديل الرخام والخشب</span>
+                        <span class="lang-en">Marble & Wood Alternatives</span>
+                    </div>
+                    <div class="mf-item">
+                        <i class="fas fa-gem"></i>
+                        <span class="lang-ar">ديكورات صالونات نسائية</span>
+                        <span class="lang-en">Ladies Salon Decorations</span>
+                    </div>
                 </div>
 
                 <div class="action-btns mt-4">
-                    <a href="decor-details.html" class="btn-clean-solid">اقرأ التفاصيل الفنية</a>
-                    <a href="https://wa.me/971566049805" class="btn-clean-outline" target="_blank">اطلب استشارة
-                        مجانية</a>
+                    <a href="decor-details.html" class="btn-clean-solid">
+                        <span class="lang-ar">اقرأ التفاصيل الفنية</span>
+                        <span class="lang-en">Technical Details</span>
+                    </a>
+                    <a href="https://wa.me/971566049805" class="btn-clean-outline" target="_blank">
+                        <span class="lang-ar">اطلب استشارة مجانية</span>
+                        <span class="lang-en">Free Consultation</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -217,41 +364,74 @@
     <!-- قسم الصيانة العامة المطور في الرئيسية -->
     <section id="maintenance" class="section-padding bg-dark text-white">
         <div class="container">
+            <!-- عنوان القسم -->
             <div class="section-header text-center reveal">
-                <h2 class="section-title gold-text">الصيانة العامة للمنازل والفلل</h2>
-                <p>حلول صيانة متكاملة تضمن أمان وكفاءة منزلك على مدار العام</p>
+                <h2 class="section-title gold-text">
+                    <span class="lang-ar">الصيانة العامة للمنازل والفلل</span>
+                    <span class="lang-en">General Maintenance for Homes & Villas</span>
+                </h2>
+                <p>
+                    <span class="lang-ar">حلول صيانة متكاملة تضمن أمان وكفاءة منزلك على مدار العام</span>
+                    <span class="lang-en">Integrated maintenance solutions ensuring the safety and efficiency of your
+                        home year-round</span>
+                </p>
             </div>
 
             <div class="maintenance-main-grid">
+                <!-- شبكة كروت الخدمات -->
                 <div class="m-grid-items">
+                    <!-- كهرباء -->
                     <div class="m-card reveal">
                         <i class="fas fa-bolt"></i>
-                        <h4>أعمال الكهرباء</h4>
-                        <p>فحص وتمديد الأسلاك ومعالجة أعطال التوصيلات.</p>
+                        <h4 class="lang-ar">أعمال الكهرباء</h4>
+                        <h4 class="lang-en">Electrical Works</h4>
+                        <p class="lang-ar">فحص وتمديد الأسلاك ومعالجة أعطال التوصيلات.</p>
+                        <p class="lang-en">Inspecting, wiring, and fixing electrical connection faults.</p>
                     </div>
+                    <!-- سباكة -->
                     <div class="m-card reveal">
                         <i class="fas fa-faucet"></i>
-                        <h4>أعمال السباكة</h4>
-                        <p>صيانة شبكات المياه والصرف الصحي وتغيير الأطقم.</p>
+                        <h4 class="lang-ar">أعمال السباكة</h4>
+                        <h4 class="lang-en">Plumbing Works</h4>
+                        <p class="lang-ar">صيانة شبكات المياه والصرف الصحي وتغيير الأطقم.</p>
+                        <p class="lang-en">Water and sewage network maintenance and fixture replacement.</p>
                     </div>
+                    <!-- تكييف -->
                     <div class="m-card reveal">
                         <i class="fas fa-wind"></i>
-                        <h4>التكييف والتهوية</h4>
-                        <p>تنظيف الفلاتر، شحن الفريون، وصيانة المكيفات.</p>
+                        <h4 class="lang-ar">التكييف والتهوية</h4>
+                        <h4 class="lang-en">HVAC & Ventilation</h4>
+                        <p class="lang-ar">تنظيف الفلاتر، شحن الفريون، وصيانة المكيفات.</p>
+                        <p class="lang-en">Filter cleaning, Freon refilling, and AC unit maintenance.</p>
                     </div>
+                    <!-- أصباغ -->
                     <div class="m-card reveal">
                         <i class="fas fa-paint-roller"></i>
-                        <h4>الأصباغ والدهانات</h4>
-                        <p>تجديد ألوان الجدران ومعالجة تقشير الصبغ والرطوبة.</p>
+                        <h4 class="lang-ar">الأصباغ والدهانات</h4>
+                        <h4 class="lang-en">Paints & Finishes</h4>
+                        <p class="lang-ar">تجديد ألوان الجدران ومعالجة تقشير الصبغ والرطوبة.</p>
+                        <p class="lang-en">Wall repainting and treating paint peeling and humidity issues.</p>
                     </div>
                 </div>
 
+                <!-- صندوق الدعوة للحجز (CTA) -->
                 <div class="m-cta-box reveal">
-                    <h3>صيانة وقائية شاملة</h3>
-                    <p>نحن نحافظ على عقارك من التدهور ونوفر عليك التكاليف الباهظة في المستقبل.</p>
+                    <h3 class="lang-ar">صيانة وقائية شاملة</h3>
+                    <h3 class="lang-en">Comprehensive Preventive Maintenance</h3>
+
+                    <p class="lang-ar">نحن نحافظ على عقارك من التدهور ونوفر عليك التكاليف الباهظة في المستقبل.</p>
+                    <p class="lang-en">We protect your property from deterioration and save you from high costs in the
+                        future.</p>
+
                     <div class="mt-4">
-                        <a href="maintenance-details.html" class="btn-gold-small">عرض كافة الخدمات الشاملة</a>
-                        <a href="tel:0566049805" class="btn-outline-gold">طلب صيانة فورية</a>
+                        <a href="maintenance-details.html" class="btn-gold-small">
+                            <span class="lang-ar">عرض كافة الخدمات الشاملة</span>
+                            <span class="lang-en">View All Services</span>
+                        </a>
+                        <a href="tel:0566049805" class="btn-outline-gold">
+                            <span class="lang-ar">طلب صيانة فورية</span>
+                            <span class="lang-en">Request Immediate Fix</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -262,35 +442,63 @@
     <footer class="main-footer-dark">
         <div class="container footer-grid">
 
-            <!-- العمود الأول: معلومات العلامة التجارية -->
-            <div class="footer-col brand-col">
-                <img src="images/logo.png" alt="إليزيه" class="footer-logo">
+            <!-- العمود الأول: العلامة التجارية والوصف -->
+            <div class="footer-col brand-col reveal">
+                <img src="images/logo.png" alt="Elyzee Logo" class="footer-logo">
                 <div class="brand-name">
-                    <h3 class="gold-text">إليزيه</h3>
-                    <span>Elyzee Building Services</span>
+                    <h3 class="gold-text lang-ar">إليزيه</h3>
+                    <h3 class="gold-text lang-en">Elyzee</h3>
+                    <span class="lang-ar">لخدمات المباني</span>
+                    <span class="lang-en">Building Services</span>
                 </div>
                 <p class="footer-desc lang-ar">نعتني بتفاصيل مبانيكم لتدوم فخامتها. جودة لا تضاهى في الجلي، التنظيف،
-                    والصيانة.</p>
+                    والصيانة في قلب أبوظبي.</p>
                 <p class="footer-desc lang-en">Taking care of your building details to last its luxury. Unmatched
-                    quality in polishing, cleaning, and maintenance.</p>
+                    quality in polishing, cleaning, and maintenance in Abu Dhabi.</p>
             </div>
 
-            <!-- العمود الثاني: خدماتنا (SEO) -->
-            <div class="footer-col services-col">
+            <!-- العمود الثاني: خدماتنا (مترجمة بالكامل) -->
+            <div class="footer-col services-col reveal">
                 <h4 class="footer-title lang-ar">خدماتنا</h4>
                 <h4 class="footer-title lang-en">Our Services</h4>
                 <ul class="footer-links">
-                    <li><a href="marble-details.html">جلي وتلميع الرخام</a></li>
-                    <li><a href="cleaning-details.html">تنظيف الفلل والمنازل</a></li>
-                    <li><a href="#cleaning">عاملات بالساعة</a></li>
-                    <li><a href="#decor">ديكور وجبس بورد</a></li>
-                    <li><a href="#maintenance">صيانة عامة</a></li>
+                    <li>
+                        <a href="marble-details.html">
+                            <span class="lang-ar">جلي وتلميع الرخام</span>
+                            <span class="lang-en">Marble Polishing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cleaning-details.html">
+                            <span class="lang-ar">تنظيف الفلل والمنازل</span>
+                            <span class="lang-en">Villa & House Cleaning</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#cleaning">
+                            <span class="lang-ar">عاملات بنظام الساعة</span>
+                            <span class="lang-en">Hourly Cleaning</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="decor-details.html">
+                            <span class="lang-ar">ديكور وجبس بورد</span>
+                            <span class="lang-en">Decor & Gypsum Board</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="maintenance-details.html">
+                            <span class="lang-ar">صيانة عامة للمباني</span>
+                            <span class="lang-en">General Maintenance</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
-            <!-- العمود الثالث: تواصل معنا -->
-            <div class="footer-col contact-col">
+            <!-- العمود الثالث: تواصل معنا (أبوظبي) -->
+            <div class="footer-col contact-col reveal">
                 <h4 class="footer-title lang-ar">تواصل معنا</h4>
+                <h4 class="footer-title lang-en">Contact Us</h4>
                 <div class="footer-contact-links">
                     <a href="tel:+971566049805" class="footer-contact-item">
                         <i class="fas fa-phone-alt"></i> <span dir="ltr">056 604 9805</span>
@@ -299,38 +507,45 @@
                         <i class="fas fa-phone-alt"></i> <span dir="ltr">058 534 0048</span>
                     </a>
                     <a href="mailto:elyzeebs@gmail.com" class="footer-contact-item">
-                        <i class="fas fa-envelope"></i> elyzeebs@gmail.com
-                    </a>
-                    <a href="mailto:Elyzeebs@outlook.com" class="footer-contact-item">
-                        <i class="fas fa-envelope"></i> Elyzeebs@outlook.com
+                        <i class="fas fa-envelope"></i> <span>elyzeebs@gmail.com</span>
                     </a>
                     <div class="footer-contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span class="lang-ar">أبو ظبي، الإمارات</span>
-                        <span class="lang-en">Abu Dhabi, UAE</span>
+                        <span class="lang-ar">أبو ظبي، الإمارات العربية المتحدة</span>
+                        <span class="lang-en">Abu Dhabi, United Arab Emirates</span>
                     </div>
+                </div>
+
+                <!-- السوشيال ميديا -->
+                <div class="footer-social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-snapchat"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
 
         </div>
 
-        <!-- شريط الحقوق السفلي -->
+        <!-- شريط الحقوق السفلي المطور -->
         <div class="footer-bottom-bar">
-            <div class="container text-center">
-                <p style="text-align: center;">&copy; 2026 جميع الحقوق محفوظة لشركة إليزيه لخدمات المباني</p>
-                <p style="text-align: center;">Design and programming by<a
-                        href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL"
-                        target="_blank"><strong style="color: #c5a059;">GMTWEB</strong> </a> </p>
+            <div class="container footer-copy-flex">
+                <p class="lang-ar">&copy; 2026 جميع الحقوق محفوظة لشركة <strong>إليزيه لخدمات المباني</strong></p>
+                <p class="lang-en">&copy; 2026 All Rights Reserved to <strong>Elyzee Building Services</strong></p>
+
+                <div class="dev-credit">
+                    <span class="lang-ar">تصميم وتطوير <a href="https://www.facebook.com/profile.php?id=100090592885243"
+                            target="_blank">GMTWEB</a></span>
+                    <span class="lang-en">Developed by <a href="https://www.facebook.com/profile.php?id=100090592885243"
+                            target="_blank">GMTWEB</a></span>
+                </div>
             </div>
         </div>
     </footer>
 
     <div class="floating-actions">
-        <!-- واتساب الرقم الأساسي -->
         <a href="https://wa.me/971566049805" target="_blank" class="float-btn whatsapp" title="واتساب">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <!-- اتصال الرقم الأساسي -->
         <a href="tel:+971566049805" class="float-btn phone" title="اتصال هاتفي">
             <i class="fas fa-phone-alt"></i>
         </a>
