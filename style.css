@@ -3310,3 +3310,37 @@ body {
     20% { left: 200%; }
     100% { left: 200%; }
 }
+
+/* خلفية هيرو تنسيق الحدائق */
+.landscaping-hero-bg {
+background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+                url('images/حدائق.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* أزرار الخدمات المصغرة في الرئيسية */
+.btn-clean-outline-small {
+    padding: 6px 15px;
+    border: 1px solid var(--gold);
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.btn-clean-solid-small {
+    padding: 6px 15px;
+    background: var(--gold);
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.cleaning-hero-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+                url('images/تنضيف.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
