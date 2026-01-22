@@ -3344,3 +3344,79 @@ background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     background-size: cover !important;
     background-position: center !important;
 }
+/* --- تنسيق قسم الحدائق في الرئيسية --- */
+.landscaping-home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* تقسيم متساوي 50/50 */
+    gap: 60px;
+    align-items: center;
+}
+
+.luxury-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--primary); /* العنابي */
+    color: var(--gold);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 14px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    z-index: 5;
+}
+
+/* زر العنابي المفرغ خصيصاً لهذا القسم */
+.btn-outline-maroon {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-outline-maroon:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* لضمان تبادل الأماكن في الإنجليزية */
+[lang="en"] .landscaping-home-grid {
+    direction: ltr;
+}
+
+[lang="en"] .luxury-tag {
+    right: auto;
+    left: 20px;
+}
+
+/* الموبايل */
+@media (max-width: 992px) {
+    .landscaping-home-grid {
+        grid-template-columns: 1fr; /* عمود واحد في الجوال */
+        text-align: center;
+        gap: 40px;
+    }
+
+    /* جعل الصورة تظهر فوق النص في الموبايل */
+    .landscaping-images {
+        order: -1; 
+    }
+
+    .mini-features {
+        display: inline-block;
+        text-align: right;
+    }
+    
+    [lang="en"] .mini-features { text-align: left; }
+
+    .action-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .action-btns a { width: 100%; margin: 0; }
+}
