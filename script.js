@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // --- 1. معالجة تبديل اللغة (Arabic First) ---
-    const langBtn = document.getElementById('langSwitcher');
+        const langBtn = document.getElementById('langSwitcher');
     const langText = document.getElementById('langText'); 
     const htmlTag = document.documentElement;
 
@@ -27,14 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // تطبيق اللغة عند التحميل
     const savedLang = localStorage.getItem('userLang') || 'ar';
     applyLanguage(savedLang);
 
 
-    // --- 2. تشغيل قائمة الموبايل (Hamburger Menu) ---
     const menuBtn = document.getElementById('mobile-menu-btn');
-    const navLinks = document.querySelector('.nav-links'); // التعديل هنا لاستهداف الـ UL مباشرة
+    const navLinks = document.querySelector('.nav-links'); 
 
     if (menuBtn && navLinks) {
         menuBtn.addEventListener('click', (e) => {
@@ -48,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // إغلاق القائمة عند الضغط على أي رابط
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -62,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // --- 3. أنيميشن السكرول (Reveal on Scroll) ---
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {

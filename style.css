@@ -27,7 +27,6 @@ body {
     margin: auto;
 }
 
-/* تبديل اللغات */
 [lang="en"] .lang-ar {
     display: none;
 }
@@ -36,7 +35,6 @@ body {
     display: none;
 }
 
-/* --- الهيدر واللوجو --- */
 .main-header {
     background: var(--light);
     padding: 10px 0;
@@ -96,7 +94,6 @@ body {
     color: var(--gold);
 }
 
-/* إخفاء زر القائمة في الديسكتوب */
 .menu-toggle {
     display: none;
     color: white;
@@ -104,10 +101,8 @@ body {
     cursor: pointer;
 }
 
-/* --- الواجهة ملء الشاشة مع أنيميشن --- */
 .hero {
     height: 100vh;
-    /* ملء الشاشة */
     width: 100%;
     position: relative;
     display: flex;
@@ -128,7 +123,6 @@ body {
     background-size: cover;
     background-position: center;
     z-index: 1;
-    /* أنيميشن زوم ان وزوم اوت مستمر */
     animation: kenBurns 20s linear infinite alternate;
 }
 
@@ -165,7 +159,6 @@ body {
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* أنيميشن النصوص عند الفتح */
 .animate-up {
     opacity: 0;
     transform: translateY(30px);
@@ -187,7 +180,6 @@ body {
     }
 }
 
-/* زر النبض */
 .pulse {
     animation: pulseAnim 2s infinite;
 }
@@ -219,11 +211,9 @@ body {
     border: none;
 }
 
-/* --- ضبط الجوال --- */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
-        /* ستظهر برمجياً عند الضغط */
         position: absolute;
         top: 100%;
         left: 0;
@@ -259,12 +249,9 @@ body {
         display: flex !important;
         flex-direction: column !important;
 
-        /* التعديل هنا لتقليل الفراغات */
         justify-content: center !important;
-        /* يوسط الكتلة كاملة في نص الشاشة */
         align-items: center !important;
         gap: 10px !important;
-        /* المسافة بين كل رابط والثاني */
 
         transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
         z-index: 2500;
@@ -272,21 +259,18 @@ body {
 
     .nav-links li {
         margin: 5px 0 !important;
-        /* تقليل المارجن */
         width: 100%;
         text-align: center;
     }
 
     .nav-links li a {
         font-size: 20px !important;
-        /* تصغير الخط قليلاً ليبدو أرشق */
         padding: 10px 0 !important;
         display: block;
         color: #fff !important;
         font-weight: 600;
     }
 
-    /* ضبط زر اللغة ليكون قريباً من القائمة وليس بعيداً في الأسفل */
     .mobile-lang-item {
         margin-top: 20px !important;
     }
@@ -306,7 +290,6 @@ body {
 .lang-btn {
     background: var(--gold);
     color: var(--primary);
-    /* جعل النص بلون كحلي ليتضح فوق الذهبي */
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
@@ -315,14 +298,12 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    /* مسافة بين الأيقونة والنص */
     transition: 0.3s;
     font-size: 14px;
 }
 
 .lang-btn:hover {
     background: #e5bc6d;
-    /* لون ذهبي أفتح قليلاً عند الوقوف */
     transform: translateY(-2px);
 }
 
@@ -330,7 +311,6 @@ body {
     font-size: 16px;
 }
 
-/* --- تنسيق قسم الرخام المطور --- */
 .marble-main-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -385,7 +365,6 @@ body {
     font-size: 20px;
 }
 
-/* زر "عرض التفاصيل" */
 .btn-outline {
     border: 2px solid var(--gold);
     color: var(--primary);
@@ -403,7 +382,6 @@ body {
     border-color: var(--primary);
 }
 
-/* الموبايل */
 @media (max-width: 768px) {
     .marble-main-grid {
         grid-template-columns: 1fr;
@@ -425,9 +403,6 @@ body {
     }
 }
 
-/* --- تنسيقات ثابتة لصفحة التفاصيل --- */
-
-/* الهيرو الداخلي */
 .page-hero-inner {
     height: 45vh;
     background: linear-gradient(rgba(45, 9, 9, 0.8), rgba(45, 9, 9, 0.8)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1500');
@@ -446,12 +421,10 @@ body {
     font-weight: 800;
 }
 
-/* شبكة البطاقات - 4 في الصف للكمبيوتر */
 .features-details-grid,
 .steps-grid-details {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* السر هنا: 4 أعمدة متساوية */
     gap: 20px;
 }
 
@@ -490,7 +463,6 @@ body {
     color: #666;
 }
 
-/* الدوائر المرقمة للخطوات */
 .step-circle {
     width: 50px;
     height: 50px;
@@ -505,7 +477,6 @@ body {
     margin: 0 auto 15px;
 }
 
-/* صندوق النصائح */
 .tips-box {
     background: #fdfaf3;
     padding: 40px;
@@ -532,7 +503,6 @@ body {
     margin-left: 10px;
 }
 
-/* الأزرار */
 .btns-flex {
     display: flex;
     justify-content: center;
@@ -554,7 +524,6 @@ body {
     color: white;
 }
 
-/* --- ضبط الجوال --- */
 @media (max-width: 992px) {
 
     .features-details-grid,
@@ -579,13 +548,10 @@ body {
     }
 }
 
-/* --- ضبط المسافات العامة --- */
 .section-padding {
     padding: 100px 0;
-    /* مساحة أكبر بين الأقسام */
 }
 
-/* تنسيق شبكة الرخام في الرئيسية */
 .marble-main-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -606,7 +572,6 @@ body {
     object-fit: cover;
 }
 
-/* تنسيق كروت التنظيف في الرئيسية */
 .cleaning-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -634,7 +599,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* تنسيق صفحة المقال (التفاصيل) */
 .article-layout {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -664,7 +628,6 @@ body {
     text-align: center;
 }
 
-/* الموبايل */
 @media (max-width: 992px) {
 
     .marble-main-grid,
@@ -677,12 +640,10 @@ body {
     }
 }
 
-/* --- تنسيق صفحة المقال والتنظيف --- */
 
 .article-layout {
     display: grid;
     grid-template-columns: 1.8fr 1fr;
-    /* توزيع المساحة بين المقال والسايد بار */
     gap: 40px;
     align-items: start;
 }
@@ -694,7 +655,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* شبكة الـ 1, 2, 3 */
 .importance-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -729,7 +689,6 @@ body {
     font-weight: 900;
 }
 
-/* بارات الخدمات (الرمادية) */
 .detailed-services-list {
     display: flex;
     flex-direction: column;
@@ -744,7 +703,6 @@ body {
     padding: 20px 25px;
     border-radius: 15px;
     border-right: 5px solid var(--gold);
-    /* خط ذهبي جانبي */
     transition: 0.3s;
 }
 
@@ -758,11 +716,9 @@ body {
     color: var(--primary);
 }
 
-/* الصندوق الأزرق (السايد بار) */
 .sticky-cta-box {
     position: sticky;
     top: 120px;
-    /* ليتحرك مع السكرول */
     background: var(--primary);
     color: white;
     padding: 40px 30px;
@@ -815,7 +771,6 @@ body {
     background: var(--gold);
 }
 
-/* الموبايل */
 @media (max-width: 992px) {
     .article-layout {
         grid-template-columns: 1fr;
@@ -827,9 +782,6 @@ body {
     }
 }
 
-/* --- تنسيق أزرار كروت التنظيف --- */
-
-/* الزر المفرغ (اقرأ المقال) */
 .btn-clean-outline {
     display: inline-block;
     margin-top: 20px;
@@ -856,10 +808,8 @@ body {
 
 .btn-clean-outline:hover i {
     transform: translateX(-5px);
-    /* حركة السهم جهة اليمين في العربي */
 }
 
-/* الزر المصمت (احجز الآن) */
 .btn-clean-solid {
     display: inline-block;
     margin-top: 20px;
@@ -886,18 +836,14 @@ body {
     box-shadow: 0 8px 20px rgba(0, 35, 71, 0.2);
 }
 
-/* ضبط المسافات داخل الكارت لضمان التنسيق */
 .clean-pro-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* يوزع المحتوى بحيث يكون الزر دائماً في الأسفل */
     min-height: 380px;
-    /* توحيد ارتفاع الكروت */
     padding: 40px 30px;
 }
 
-/* --- تنسيق قسم الديكور في الرئيسية --- */
 .decor-main-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -937,7 +883,6 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* --- تنسيق قائمة الخدمات في صفحة التفاصيل --- */
 .services-list-detailed {
     display: flex;
     flex-direction: column;
@@ -973,7 +918,6 @@ body {
     transform: translateX(-10px);
 }
 
-/* الموبايل */
 @media (max-width: 992px) {
     .decor-main-grid {
         grid-template-columns: 1fr;
@@ -988,13 +932,9 @@ body {
     }
 }
 
-/* --- تنسيق صفحة الديكور المطور --- */
-
-/* تقسيم الصفحة لعمودين (مقال + سايد بار) */
 .article-layout-grid {
     display: grid;
     grid-template-columns: 2fr 350px;
-    /* المقال يأخذ ضعفي السايد بار */
     gap: 50px;
     align-items: start;
 }
@@ -1006,7 +946,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* شبكة المميزات الثلاثية */
 .importance-mini-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1044,7 +983,6 @@ body {
     color: #777;
 }
 
-/* قائمة الخدمات المرقمة (تصميم أرشق) */
 .numbered-services-list {
     display: flex;
     flex-direction: column;
@@ -1081,7 +1019,6 @@ body {
     margin: 0;
 }
 
-/* السايد بار (الصندوق الداكن) */
 .sticky-contact-card {
     position: sticky;
     top: 100px;
@@ -1125,7 +1062,6 @@ body {
     color: var(--gold);
 }
 
-/* --- الموبايل --- */
 @media (max-width: 992px) {
     .article-layout-grid {
         grid-template-columns: 1fr;
@@ -1141,7 +1077,6 @@ body {
     }
 }
 
-/* --- تنسيق قسم الصيانة في الرئيسية --- */
 .maintenance-main-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -1196,7 +1131,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* أزرار مخصصة */
 .btn-gold-small {
     background: var(--gold);
     color: #fff;
@@ -1217,7 +1151,6 @@ body {
     display: inline-block;
 }
 
-/* --- تنسيقات صفحة مقال الصيانة --- */
 .importance-grid-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1269,7 +1202,6 @@ body {
     margin-left: 10px;
 }
 
-/* الموبايل */
 @media (max-width: 992px) {
     .maintenance-main-grid {
         grid-template-columns: 1fr;
@@ -1284,12 +1216,10 @@ body {
     }
 }
 
-/* --- تنسيق صفحة الصيانة المطور --- */
 
 .article-layout-grid {
     display: grid;
     grid-template-columns: 2fr 350px;
-    /* المقال جهة اليمين والسايد بار جهة اليسار */
     gap: 50px;
     align-items: start;
 }
@@ -1301,7 +1231,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* شبكة المميزات (1, 2, 3) */
 .importance-mini-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1329,7 +1258,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* قائمة الخدمات (البارات) */
 .numbered-services-list {
     display: flex;
     flex-direction: column;
@@ -1367,7 +1295,6 @@ body {
     line-height: 1.5;
 }
 
-/* السايد بار (Sticky) */
 .sticky-contact-card {
     position: sticky;
     top: 100px;
@@ -1411,7 +1338,6 @@ body {
     margin: 20px 0;
 }
 
-/* الموبايل */
 @media (max-width: 992px) {
     .article-layout-grid {
         grid-template-columns: 1fr;
@@ -1427,7 +1353,6 @@ body {
     }
 }
 
-/* --- تنسيق الفوتر الجديد (أعمدة) --- */
 .main-footer-dark {
     background: var(--primary-dark);
     color: #ffffff;
@@ -1439,7 +1364,6 @@ body {
 .footer-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
-    /* تقسيم الأعمدة */
     gap: 40px;
     padding-bottom: 50px;
 }
@@ -1453,7 +1377,6 @@ body {
     padding-bottom: 10px;
 }
 
-/* خط صغير تحت عنوان العمود */
 .footer-col h4.footer-title::after {
     content: '';
     position: absolute;
@@ -1469,7 +1392,6 @@ body {
     left: 0;
 }
 
-/* العمود الأول: البراند */
 .footer-logo {
     height: 70px;
     margin-bottom: 15px;
@@ -1488,7 +1410,6 @@ body {
     max-width: 300px;
 }
 
-/* العمود الثاني: الروابط */
 .footer-links {
     list-style: none;
     padding: 0;
@@ -1510,7 +1431,6 @@ body {
     padding-right: 10px;
 }
 
-/* العمود الثالث: التواصل */
 .footer-contact-info {
     display: flex;
     flex-direction: column;
@@ -1555,7 +1475,6 @@ body {
     transform: translateY(-5px);
 }
 
-/* شريط الحقوق */
 .footer-bottom-bar {
     background: #1a0505;
     padding: 20px 0;
@@ -1564,18 +1483,15 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* --- الموبايل --- */
 @media (max-width: 992px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
-        /* عمودين في التابلت */
     }
 }
 
 @media (max-width: 768px) {
     .footer-grid {
         grid-template-columns: 1fr;
-        /* عمود واحد في الجوال */
         text-align: center;
     }
 
@@ -1598,19 +1514,16 @@ body {
     }
 }
 
-/* --- تنسيق أزرار التواصل العائمة (دوائر) --- */
 .floating-actions {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    /* تظهر يمين في المتصفح العربي */
     display: flex;
     flex-direction: column;
     gap: 15px;
     z-index: 9999;
 }
 
-/* تبديل الاتجاه للموقع الإنجليزي ليكون يسار */
 [lang="en"] .floating-actions {
     right: auto;
     left: 30px;
@@ -1620,7 +1533,6 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    /* جعلها دائرة كاملة */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1633,19 +1545,16 @@ body {
     border: none;
 }
 
-/* لون زر الواتساب (أخضر) مع أنيميشن نبض */
 .float-btn.whatsapp {
     background-color: #25d366;
     animation: pulse-green 2s infinite;
 }
 
-/* لون زر الهاتف (ذهبي إليزيه) مع أنيميشن اهتزاز */
 .float-btn.phone {
     background-color: var(--gold);
     animation: shake-btn 4s ease-in-out infinite;
 }
 
-/* --- أنيميشن الاهتزاز (Vibration) لزر الهاتف --- */
 @keyframes shake-btn {
 
     0%,
@@ -1670,7 +1579,6 @@ body {
     }
 }
 
-/* --- أنيميشن النبض (Pulse) لزر الواتساب --- */
 @keyframes pulse-green {
     0% {
         transform: scale(1);
@@ -1688,14 +1596,11 @@ body {
     }
 }
 
-/* تأثير عند مرور الماوس */
 .float-btn:hover {
     transform: scale(1.2) !important;
     animation-play-state: paused;
-    /* توقف الحركة عند الوقوف عليها */
 }
 
-/* ضبط الجوال */
 @media (max-width: 768px) {
     .float-btn {
         width: 55px;
@@ -1704,7 +1609,6 @@ body {
     }
 }
 
-/* --- تنسيق سكشن من نحن الجديد --- */
 .about-main-flex {
     display: flex;
     align-items: center;
@@ -1732,7 +1636,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* المميزات داخل السكشن */
 .about-features {
     display: flex;
     flex-direction: column;
@@ -1751,7 +1654,6 @@ body {
 
 .af-item:hover {
     background: #fdf6f6;
-    /* خلفية عنابية خفيفة جداً */
     transform: translateX(-10px);
 }
 
@@ -1766,7 +1668,6 @@ body {
     margin-bottom: 5px;
 }
 
-/* أزرار مخصصة */
 .btn-gold-fill {
     background: var(--gold);
     color: #fff;
@@ -1788,7 +1689,6 @@ body {
     display: inline-block;
 }
 
-/* الصورة والإطار */
 .img-frame {
     position: relative;
     border-radius: 30px;
@@ -1827,7 +1727,6 @@ body {
     margin: 0;
 }
 
-/* الموبايل */
 @media (max-width: 992px) {
     .about-main-flex {
         flex-direction: column;
@@ -1855,15 +1754,12 @@ body {
     }
 }
 
-/* --- ضبط الموبايل الاحترافي --- */
 @media (max-width: 768px) {
 
-    /* 1. جعل القائمة الجانبية تخرج بشكل أنيق */
     .nav-links {
         position: fixed;
         top: 0;
         right: -100%;
-        /* مخفية */
         width: 280px;
         height: 100vh;
         background: var(--primary);
@@ -1877,7 +1773,6 @@ body {
 
     .nav-links.active {
         right: 0;
-        /* تظهر عند الضغط */
     }
 
     .nav-links li {
@@ -1897,7 +1792,6 @@ body {
         margin-top: 20px;
     }
 
-    /* 2. توسيط سكشن (من نحن) في الموبايل */
     .about-main-flex {
         flex-direction: column !important;
         text-align: center;
@@ -1915,7 +1809,6 @@ body {
         gap: 15px;
     }
 
-    /* 3. توسيط سكشن (الصيانة) والأزرار */
     .maintenance-main-grid {
         grid-template-columns: 1fr !important;
         text-align: center;
@@ -1936,19 +1829,16 @@ body {
         max-width: 280px;
     }
 
-    /* 4. ضبط الهيرو (الواجهة) */
     .hero-content h2 {
         font-size: 2rem !important;
     }
 
-    /* 5. الفوتر */
     .footer-grid {
         grid-template-columns: 1fr !important;
         text-align: center;
     }
 }
 
-/* إخفاء زر اللغة القديم من الهيدر في الديسكتوب لإبقائه في القائمة فقط أو العكس */
 .menu-toggle {
     display: none;
 }
@@ -1967,17 +1857,13 @@ body {
 
 @media (max-width: 768px) {
 
-    /* جعل القائمة خلفيتها كحلية داكنة (مثل الفوتر) */
     .nav-links {
         position: fixed;
         top: 0;
         right: -100%;
-        /* مخفية */
         width: 100%;
-        /* عرض كامل لشاشة الموبايل */
         height: 100vh;
         background: #001a35 !important;
-        /* لون كحلي غامق جداً */
         display: flex !important;
         flex-direction: column;
         justify-content: center;
@@ -1986,7 +1872,6 @@ body {
         z-index: 1500;
     }
 
-    /* عند تفعيل القائمة تظهر من اليمين */
     .nav-links.active {
         right: 0 !important;
     }
@@ -1997,19 +1882,15 @@ body {
 
     .nav-links li a {
         color: #ffffff !important;
-        /* نص أبيض صريح */
         font-size: 22px;
         font-weight: bold;
     }
 
-    /* زر الإغلاق والتنسيق */
     .menu-toggle {
         z-index: 2000;
-        /* أعلى من القائمة */
         position: relative;
     }
 
-    /* منع التمرير عند فتح القائمة */
     body.menu-open {
         overflow: hidden;
     }
@@ -2019,25 +1900,18 @@ body {
 
 @media (max-width: 768px) {
 
-    /* ضبط القائمة الجانبية */
     .nav-links {
         position: fixed;
         top: 0;
         right: -100%;
-        /* مخفية جهة اليمين */
         width: 100%;
-        /* عرض كامل لشاشة الموبايل */
         height: 100vh;
         background: rgba(0, 26, 53, 0.98) !important;
-        /* لون كحلي داكن مع شفافية بسيطة */
         backdrop-filter: blur(10px);
-        /* تأثير زجاجي فخم */
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
-        /* توسيط العناصر رأسياً */
         align-items: center !important;
-        /* توسيط العناصر أفقياً */
         transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
         z-index: 2500;
     }
@@ -2046,12 +1920,10 @@ body {
         right: 0 !important;
     }
 
-    /* تنسيق الروابط داخل القائمة */
     .nav-links li {
         margin: 15px 0;
         width: auto;
         border: none !important;
-        /* إزالة الخطوط الفاصلة القديمة */
     }
 
     .nav-links li a {
@@ -2066,7 +1938,6 @@ body {
         color: var(--gold) !important;
     }
 
-    /* ضبط زر اللغة داخل القائمة */
     .mobile-lang-item {
         margin-top: 30px !important;
     }
@@ -2075,11 +1946,9 @@ body {
         background: var(--gold) !important;
         color: var(--primary) !important;
         width: auto !important;
-        /* يمنع الزر من أخذ عرض الشاشة كاملاً */
         min-width: 150px;
         padding: 12px 30px !important;
         border-radius: 50px !important;
-        /* شكل كبسولة */
         font-size: 16px !important;
         display: flex;
         align-items: center;
@@ -2088,13 +1957,11 @@ body {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
-    /* إخفاء أزرار الواتساب والاتصال عند فتح القائمة لعدم التداخل */
     body.menu-open .floating-actions {
         opacity: 0;
         visibility: hidden;
     }
 
-    /* زر الإغلاق (X) */
     .menu-toggle {
         z-index: 3000;
         color: #fff !important;
@@ -2102,10 +1969,8 @@ body {
     }
 }
 
-/* --- ضبط توسيط قسم الديكور في الموبايل --- */
 @media (max-width: 768px) {
 
-    /* توسيط الحاوية الرئيسية */
     .decor-main-grid {
         display: flex;
         flex-direction: column;
@@ -2114,7 +1979,6 @@ body {
         gap: 30px;
     }
 
-    /* توسيط النصوص */
     .decor-text-content {
         display: flex;
         flex-direction: column;
@@ -2127,12 +1991,10 @@ body {
         margin: 15px 0;
     }
 
-    /* توسيط قائمة المميزات (الأيقونات مع النص) */
     .mini-features-grid {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* يوسط العناصر رأسياً */
         justify-content: center;
         width: 100%;
         gap: 15px;
@@ -2141,16 +2003,13 @@ body {
     .mf-item {
         display: flex;
         flex-direction: row;
-        /* الحفاظ على الأيقونة بجانب النص */
         align-items: center;
         justify-content: center;
-        /* يوسط الأيقونة والنص معاً في السطر */
         width: 100%;
         gap: 10px;
         font-size: 15px;
     }
 
-    /* توسيط الأزرار وجعلها بعرض مناسب */
     .action-btns {
         display: flex;
         flex-direction: column;
@@ -2163,12 +2022,10 @@ body {
     .action-btns a {
         width: 100%;
         max-width: 280px;
-        /* عرض ثابت للأزرار في الموبايل لتبدو أرشق */
         margin: 0 !important;
         text-align: center;
     }
 
-    /* ضبط اللوجو في الهيدر للموبايل (حل مشكلة الصورة المكسورة في السكرين شوت) */
     .nav-logo {
         height: 45px !important;
     }
@@ -2181,10 +2038,8 @@ body {
 
     .section-padding {
         padding: 30px 0 !important;
-        /* تقليل من 100 إلى 30 */
     }
 
-    /* 2. تقليل المسافة بين العنوان والمحتوى */
     .section-header {
         margin-bottom: 20px !important;
     }
@@ -2194,7 +2049,6 @@ body {
         font-size: 22px !important;
     }
 
-    /* 3. سكشن الصيانة (المربعات) */
     .maintenance-main-grid {
         margin-top: 15px !important;
         gap: 15px !important;
@@ -2202,13 +2056,11 @@ body {
 
     .m-grid-items {
         gap: 10px !important;
-        /* تقليل المسافة بين كروت الكهرباء والسباكة */
     }
 
     .m-card {
         padding: 15px !important;
         min-height: auto !important;
-        /* لكي لا يأخذ طولاً زائداً */
     }
 
     .m-card i {
@@ -2216,13 +2068,11 @@ body {
         font-size: 24px !important;
     }
 
-    /* 4. سكشن الصيانة الوقائية (الصندوق الداكن) */
     .m-cta-box {
         padding: 20px !important;
         margin-top: 10px !important;
     }
 
-    /* 5. سكشن التنظيف (الصور والكروت) */
     .cleaning-grid {
         gap: 15px !important;
         margin-top: 10px !important;
@@ -2231,11 +2081,9 @@ body {
     .clean-pro-card {
         padding: 20px !important;
         min-height: auto !important;
-        /* إزالة الارتفاع الكبير المسبب للفراغ */
         margin-bottom: 10px;
     }
 
-    /* 6. ضبط أزرار التواصل لكي لا تغطي المحتوى */
     .floating-actions {
         bottom: 15px;
         right: 15px;
@@ -2253,13 +2101,10 @@ body {
     .m-grid-items {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
-        /* السر هنا */
         gap: 12px !important;
-        /* مسافة بسيطة بين المربعات */
         margin-top: 20px !important;
     }
 
-    /* 2. ضبط الكارت ليكون مربعاً وأنيقاً */
     .m-card {
         padding: 20px 10px !important;
         text-align: center;
@@ -2268,18 +2113,15 @@ body {
         align-items: center;
         justify-content: center;
         min-height: 160px !important;
-        /* توحيد الارتفاع ليكونوا متساويين */
         background: #ffffff !important;
         border: 1px solid #f0f0f0 !important;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
     }
 
-    /* 3. تصغير الأيقونات والنصوص لتناسب العرض الجديد */
     .m-card i {
         font-size: 28px !important;
         margin-bottom: 12px !important;
         background: rgba(158, 27, 35, 0.05);
-        /* خلفية خفيفة خلف الأيقونة */
         width: 50px;
         height: 50px;
         display: flex;
@@ -2290,18 +2132,15 @@ body {
 
     .m-card h4 {
         font-size: 14px !important;
-        /* تصغير العنوان قليلاً */
         margin-bottom: 5px !important;
     }
 
     .m-card p {
         font-size: 11px !important;
-        /* تصغير الوصف ليكون سطرين فقط */
         line-height: 1.4 !important;
         color: #888 !important;
     }
 
-    /* 4. سكشن الصيانة الوقائية (الصندوق اللي فيه الزرار) */
     .m-cta-box {
         margin-top: 20px !important;
         padding: 25px 20px !important;
@@ -2321,7 +2160,6 @@ body {
     }
 }
 
-/* تحسين عرض بيانات التواصل في الفوتر */
 .footer-contact-links {
     display: flex;
     flex-direction: column;
@@ -2349,7 +2187,6 @@ body {
     transform: translateX(-5px);
 }
 
-/* في حال كان الموقع إنجليزي */
 [lang="en"] .footer-contact-item:hover {
     transform: translateX(5px);
 }
@@ -2378,20 +2215,17 @@ body {
         gap: 10px;
     }
 
-    /* 3. جعل الخط الذهبي تحت العنوان يتوسط الشاشة */
     .footer-col.contact-col h4.footer-title::after {
         left: 50% !important;
         right: auto !important;
         transform: translateX(-50%);
     }
 
-    /* 4. توسيط أيقونات السوشيال ميديا */
     .footer-social-icons {
         justify-content: center !important;
         margin-top: 20px;
     }
 
-    /* 5. ضبط المسافة بين الأرقام لسهولة الضغط */
     .footer-contact-item span {
         font-size: 16px;
     }
@@ -2415,54 +2249,45 @@ body {
         transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
         z-index: 2500;
 
-        /* الحالة الافتراضية للإغلاق (عربي) */
         right: -100%;
         left: auto;
     }
 
-    /* عندما تكون القائمة مفتوحة في العربي */
     [lang="ar"] .nav-links.active {
         right: 0 !important;
         left: auto !important;
     }
 
-    /* الحالة الافتراضية للإغلاق (إنجليزي) */
     [lang="en"] .nav-links {
         left: -100% !important;
         right: auto !important;
     }
 
-    /* عندما تكون القائمة مفتوحة في الإنجليزي */
     [lang="en"] .nav-links.active {
         left: 0 !important;
         right: auto !important;
     }
 
-    /* زر الإغلاق X - تأكد أن مكانه لا يعيق الضغط */
     .menu-toggle {
         z-index: 3000;
         position: relative;
     }
 }
 
-/* عكس ترتيب سكشن الرخام في الإنجليزية */
 [lang="en"] .marble-main-grid {
     direction: ltr;
 }
 
-/* ضبط المسافات بين الأيقونة والنص في الإنجليزية */
 [lang="en"] .f-item i {
     margin-left: 0;
     margin-right: 15px;
 }
 
-/* ضبط مكان بادج الخبرة في الإنجليزية */
 [lang="en"] .experience-tag {
     right: auto;
     left: 20px;
 }
 
-/* تنسيق الأزرار لتبدو متناسقة */
 .action-btns {
     display: flex;
     gap: 15px;
@@ -2477,7 +2302,6 @@ body {
     white-space: nowrap;
 }
 
-/* الموبايل */
 @media (max-width: 768px) {
     .action-btns {
         flex-direction: column;
@@ -2485,12 +2309,10 @@ body {
 }
 
 
-/* عكس اتجاه شبكة الديكور في الإنجليزية */
 [lang="en"] .decor-main-grid {
     direction: ltr;
 }
 
-/* ضبط محاذاة المميزات في الإنجليزية */
 [lang="en"] .mf-item {
     justify-content: flex-start;
 }
@@ -2500,13 +2322,11 @@ body {
     margin-right: 10px;
 }
 
-/* ضبط مكان البادج العائم في الإنجليزية */
 [lang="en"] .floating-badge {
     left: auto;
     right: 20px;
 }
 
-/* تحسين شكل الأزرار لتبدو متساوية */
 .action-btns {
     display: flex;
     gap: 15px;
@@ -2530,25 +2350,21 @@ body {
 }
 
 
-/* ضبط اتجاه النصوص في كروت الصيانة للغة الإنجليزية */
 [lang="en"] .m-card {
     text-align: left;
 }
 
-/* في الموبايل يفضل بقاء التوسيط للجمالية */
 @media (max-width: 768px) {
     [lang="en"] .m-card {
         text-align: center;
     }
 }
 
-/* ضبط المسافة للأيقونات في الإنجليزية */
 [lang="en"] .m-card i {
     margin-right: 0;
     margin-bottom: 15px;
 }
 
-/* تحسين شكل الأزرار في الصندوق الجانبي */
 .m-cta-box .mt-4 {
     display: flex;
     flex-direction: column;
@@ -2562,7 +2378,6 @@ body {
     white-space: nowrap;
 }
 
-/* --- تنسيق الفوتر الشامل --- */
 .main-footer-dark {
     color: #ffffff;
     padding: 80px 0 0;
@@ -2655,7 +2470,6 @@ body {
     transform: translateY(-5px);
 }
 
-/* شريط الحقوق */
 .footer-bottom-bar {
     padding: 25px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -2676,7 +2490,6 @@ body {
     font-weight: bold;
 }
 
-/* الموبايل */
 @media (max-width: 992px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
@@ -2705,7 +2518,6 @@ body {
 
 
 
-/* تقسيم المقال والسايد بار */
 .article-layout-grid {
     display: grid;
     grid-template-columns: 1.8fr 1fr;
@@ -2713,7 +2525,6 @@ body {
     align-items: start;
 }
 
-/* شبكة المميزات */
 .importance-mini-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -2736,7 +2547,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* القائمة المرقمة */
 .numbered-services-list {
     display: flex;
     flex-direction: column;
@@ -2773,12 +2583,10 @@ body {
     opacity: 0.4;
 }
 
-/* السايد بار (Sticky) */
 .sticky-contact-card {
     position: sticky;
     top: 110px;
     background: var(--primary);
-    /* العنابي الفخم */
     color: white;
     padding: 40px 25px;
     border-radius: 30px;
@@ -2805,7 +2613,6 @@ body {
     margin: 25px 0;
 }
 
-/* الموبايل */
 @media (max-width: 992px) {
     .article-layout-grid {
         grid-template-columns: 1fr;
@@ -2822,7 +2629,6 @@ body {
 }
 
 
-/* خلفية هيرو الصيانة */
 .maintenance-hero-bg {
     background-image: url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=2000');
     height: 450px;
@@ -2831,7 +2637,6 @@ body {
 
 .sticky-contact-card {
     background: var(--primary);
-    /* اللون العنابي */
     color: white;
     padding: 40px 25px;
     border-radius: 30px;
@@ -2961,22 +2766,18 @@ body {
     gap: 20px;
 }
 
-/* --- تنسيق صفحة السياسات --- */
 
 .legal-hero {
     background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1500') !important;
     height: 300px !important;
-    /* تقليل الارتفاع لأنها صفحة نصية */
 }
 
-/* الكرت الأبيض الحاوي للنص */
 .legal-content-card {
     background: #ffffff;
     padding: 60px;
     border-radius: 30px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
     margin-top: -50px;
-    /* ليتداخل مع الهيرو بشكل أنيق */
     position: relative;
     z-index: 10;
 }
@@ -2987,7 +2788,6 @@ body {
 
 .legal-section h3 {
     color: var(--primary);
-    /* اللون العنابي */
     font-size: 22px;
     margin-bottom: 15px;
     display: flex;
@@ -3019,7 +2819,6 @@ body {
     color: #aaa;
 }
 
-/* الموبايل */
 @media (max-width: 768px) {
     .legal-content-card {
         padding: 30px 20px;
@@ -3035,7 +2834,6 @@ body {
         line-height: 1.8;
     }
 }
-/* --- تنسيق معرض الأعمال الاحترافي --- */
 
 .gallery-category-section {
     margin-bottom: 60px;
@@ -3062,16 +2860,15 @@ body {
     border-radius: 2px;
 }
 
-/* شبكة الصور - 3 في الصف */
 .gallery-grid-pro {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* توزيع 3 أعمدة متساوية */
-    gap: 20px; /* مسافة بين الصور */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
 }
 
 .gallery-item-pro {
     position: relative;
-    height: 350px; /* توحيد ارتفاع كل الصور */
+    height: 350px; 
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -3081,19 +2878,18 @@ body {
 .gallery-item-pro img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* الأهم: يمنع تمطط الصورة ويحافظ على أبعادها */
+    object-fit: cover; 
     transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* تأثير عند الوقوف بالماوس */
 .gallery-item-pro:hover img {
-    transform: scale(1.1); /* زوم ناعم للصورة */
+    transform: scale(1.1); 
 }
 
 .img-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0, 35, 71, 0.4); /* طبقة كحلية شفافة */
+    background: rgba(0, 35, 71, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3114,22 +2910,20 @@ body {
 .gallery-item-pro:hover .img-overlay { opacity: 1; }
 .gallery-item-pro:hover .img-overlay span { transform: translateY(0); }
 
-/* --- الموبايل والتابلت --- */
 @media (max-width: 992px) {
     .gallery-grid-pro {
-        grid-template-columns: repeat(2, 1fr); /* صورتين في الصف */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
     .gallery-grid-pro {
-        grid-template-columns: 1fr; /* صورة واحدة في الصف */
+        grid-template-columns: 1fr;
     }
     .gallery-item-pro {
         height: 280px;
     }
 }
-/* --- تنسيق عناوين المعرض مع الأيقونات --- */
 .category-header {
     margin-bottom: 35px;
     padding: 0 10px;
@@ -3138,19 +2932,18 @@ body {
 .category-header h2 {
     display: flex;
     align-items: center;
-    gap: 15px; /* مسافة بين الأيقونة والنص */
-    color: var(--primary); /* اللون العنابي */
+    gap: 15px; 
+    color: var(--primary); 
     font-size: 28px;
     font-weight: 900;
 }
 
 .category-header h2 i {
-    color: var(--gold); /* الأيقونات تظهر بالذهبي */
+    color: var(--gold); 
     font-size: 32px;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
-/* الخط الذهبي تحت العنوان */
 .header-line {
     width: 80px;
     height: 4px;
@@ -3163,48 +2956,42 @@ body {
     background: linear-gradient(to right, var(--gold), transparent);
 }
 
-/* ضبط المسافة بين الأقسام */
 .mt-5 {
     margin-top: 80px !important;
 }
 
-/* تحسين صور المعرض لمنع المطة */
 .gallery-item-pro {
     border-radius: 20px;
     overflow: hidden;
-    height: 300px; /* ارتفاع موحد للديسكتوب */
+    height: 300px; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .gallery-item-pro img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* يمنع التمطط ويقطع الزيادات باحترافية */
+    object-fit: cover; 
     transition: 0.5s ease;
 }
 
-/* الموبايل */
 @media (max-width: 768px) {
     .category-header h2 { font-size: 22px; justify-content: center; }
     .header-line { margin: 10px auto; }
     .gallery-item-pro { height: 250px; }
 }
-/* --- تنسيق اسم الشركة في الهيرو --- */
 .hero-brand-tag {
     display: inline-block;
-    color: var(--gold); /* اللون الذهبي */
+    color: var(--gold); 
     font-size: 1.4rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 3px; /* مسافات بين الحروف للإنجليزي */
+    letter-spacing: 3px;
     margin-bottom: 15px;
     position: relative;
     padding: 5px 20px;
-    /* تأثير توهج خفيف (Glow) */
     text-shadow: 0 0 15px rgba(197, 160, 89, 0.6);
 }
 
-/* إضافة خطوط زخرفية بجانب الاسم */
 .hero-brand-tag::before,
 .hero-brand-tag::after {
     content: "";
@@ -3215,18 +3002,15 @@ body {
     background: linear-gradient(to right, transparent, var(--gold));
 }
 
-/* الخط اليمين */
 .hero-brand-tag::before {
     right: -45px;
 }
 
-/* الخط اليسار */
 .hero-brand-tag::after {
     left: -45px;
     background: linear-gradient(to left, transparent, var(--gold));
 }
 
-/* أنيميشن إضافي لظهور الاسم أولاً */
 .hero-brand-tag {
     animation: fadeInBlur 1.5s ease-out forwards;
 }
@@ -3236,7 +3020,6 @@ body {
     100% { opacity: 1; filter: blur(0); transform: scale(1); }
 }
 
-/* ضبط المقاس في الموبايل لكي لا يخرج عن الشاشة */
 @media (max-width: 768px) {
     .hero-brand-tag {
         font-size: 1.1rem;
@@ -3244,12 +3027,11 @@ body {
     }
     .hero-brand-tag::before,
     .hero-brand-tag::after {
-        width: 25px; /* تصغير الخطوط في الجوال */
+        width: 25px; 
     }
     .hero-brand-tag::before { right: -25px; }
     .hero-brand-tag::after { left: -25px; }
 }
-/* --- اسم الشركة بنبض ذهبي وتوهج مستمر --- */
 .hero-brand-tag {
     display: inline-block;
     color: var(--gold);
@@ -3261,12 +3043,10 @@ body {
     position: relative;
     padding: 8px 25px;
     
-    /* تطبيق الأنيـمشن الجديد */
     animation: luxuryPulse 3s infinite ease-in-out;
     cursor: default;
 }
 
-/* --- أنيميشن النبض الملكي --- */
 @keyframes luxuryPulse {
     0% {
         transform: scale(1);
@@ -3274,8 +3054,7 @@ body {
         opacity: 0.9;
     }
     50% {
-        transform: scale(1.08); /* تكبير خفيف جداً كأنه ينبض */
-        /* توهج ذهبي كثيف عند النبض */
+        transform: scale(1.08);
         text-shadow: 0 0 25px rgba(197, 160, 89, 0.9), 
                      0 0 40px rgba(255, 255, 255, 0.4);
         opacity: 1;
@@ -3287,7 +3066,6 @@ body {
     }
 }
 
-/* إضافة لمسة "الشيمر" (اللمعان المتحرك فوق الحروف) */
 .hero-brand-tag::after {
     content: "";
     position: absolute;
@@ -3311,7 +3089,6 @@ body {
     100% { left: 200%; }
 }
 
-/* خلفية هيرو تنسيق الحدائق */
 .landscaping-hero-bg {
 background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
                 url('images/حدائق.jpg') !important;
@@ -3319,7 +3096,6 @@ background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     background-position: center !important;
 }
 
-/* أزرار الخدمات المصغرة في الرئيسية */
 .btn-clean-outline-small {
     padding: 6px 15px;
     border: 1px solid var(--gold);
@@ -3344,10 +3120,9 @@ background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     background-size: cover !important;
     background-position: center !important;
 }
-/* --- تنسيق قسم الحدائق في الرئيسية --- */
 .landscaping-home-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* تقسيم متساوي 50/50 */
+    grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
 }
@@ -3356,7 +3131,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     position: absolute;
     top: 20px;
     right: 20px;
-    background: var(--primary); /* العنابي */
+    background: var(--primary);
     color: var(--gold);
     padding: 10px 20px;
     border-radius: 10px;
@@ -3366,7 +3141,6 @@ background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     z-index: 5;
 }
 
-/* زر العنابي المفرغ خصيصاً لهذا القسم */
 .btn-outline-maroon {
     border: 2px solid var(--primary);
     color: var(--primary);
@@ -3383,7 +3157,6 @@ background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     color: white;
 }
 
-/* لضمان تبادل الأماكن في الإنجليزية */
 [lang="en"] .landscaping-home-grid {
     direction: ltr;
 }
@@ -3393,15 +3166,13 @@ background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     left: 20px;
 }
 
-/* الموبايل */
 @media (max-width: 992px) {
     .landscaping-home-grid {
-        grid-template-columns: 1fr; /* عمود واحد في الجوال */
+        grid-template-columns: 1fr; 
         text-align: center;
         gap: 40px;
     }
 
-    /* جعل الصورة تظهر فوق النص في الموبايل */
     .landscaping-images {
         order: -1; 
     }
